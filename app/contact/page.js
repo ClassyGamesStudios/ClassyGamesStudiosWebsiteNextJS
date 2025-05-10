@@ -54,7 +54,7 @@ export default function AboutUs() {
             <div className='contact-upper-cnt '>
               <h1>CONTACT US</h1>
               <p>
-                Whether you're a publisher, agency, development studio, Gabe Newell, or simply someone who fancies a smashing cup of tea, our doors are always open. The Classy Games Studios team would love to connect and share a laugh.
+                Whether you&apos;re a publisher, agency, development studio, Gabe Newell, or simply someone who fancies a smashing cup of tea, our doors are always open. The Classy Games Studios team would love to connect and share a laugh.
               </p>
             </div>
             <div className=' contact-lower-cnt'>

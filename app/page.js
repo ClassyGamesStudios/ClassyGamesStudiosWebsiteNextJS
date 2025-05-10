@@ -65,19 +65,19 @@ export default function Home() {
         <div className="scroller-track">
           {[...Array(2)].map((_, i) => (
             <div className="scroller-content" key={i}>
-              <div className="scroller-text">Keepin' it classy</div>
+              <div className="scroller-text">Keepin&apos; it classy</div>
               <Image src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp" alt="Logo" width={70} height={100} className="scroll-logo" />
-              <div className="scroller-text">Keepin' it classy</div>
+              <div className="scroller-text">Keepin&apos; it classy</div>
               <Image src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp" alt="Logo" width={70} height={100} className="scroll-logo" />
-              <div className="scroller-text">Keepin' it classy</div>
+              <div className="scroller-text">Keepin&apos; it classy</div>
               <Image src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp" alt="Logo" width={70} height={100} className="scroll-logo" />
-              <div className="scroller-text">Keepin' it classy</div>
+              <div className="scroller-text">Keepin&apos; it classy</div>
               <Image src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp" alt="Logo" width={70} height={100} className="scroll-logo" />
-              <div className="scroller-text">Keepin' it classy</div>
+              <div className="scroller-text">Keepin&apos; it classy</div>
               <Image src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp" alt="Logo" width={70} height={100} className="scroll-logo" />
-              <div className="scroller-text">Keepin' it classy</div>
+              <div className="scroller-text">Keepin&apos; it classy</div>
               <Image src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp" alt="Logo" width={70} height={100} className="scroll-logo" />
-              <div className="scroller-text">Keepin' it classy</div>
+              <div className="scroller-text">Keepin&apos; it classy</div>
               <Image src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp" alt="Logo" width={70} height={100} className="scroll-logo" />
             </div>
             

@@ -95,7 +95,7 @@ export default function AboutUs() {
         <div className='under-text'>
            <h1 className='under-title'>
            We Build Not Just Games, <br/>
-           But Tomorrow's Game Changers.
+           But Tomorrow&apos;s Game Changers.
            </h1>
            <p className='under-paragraph'>
            Our team is united by our shared passion for creating exceptional gaming experiences. <br/>
@@ -118,7 +118,7 @@ We are committed to continuous personal and professional development, providing 
 
         </h1>
         <p className='members-paragraph'>
-        Meet our passionate team of innovators. From forward-thinking developers to creative artists, each member brings their distinctive style and skills to the mix. Together, we're committed to challenging the limits of gaming and providing players across the globe with unforgettable experiences.
+        Meet our passionate team of innovators. From forward-thinking developers to creative artists, each member brings their distinctive style and skills to the mix. Together, we&apos;re committed to challenging the limits of gaming and providing players across the globe with unforgettable experiences.
         </p>
         <div className="team-photo-cnt">
   {names.map((name, i) => (

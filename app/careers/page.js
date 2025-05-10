@@ -67,7 +67,7 @@ export default function CareersPage() {
               At Classy Games Studios, we are a community, team, and crew. Each member plays a vital role in our game development endeavors. We prioritize support and collaboration, ensuring everyone feel valued and heard. We offer flexible work arrangements and remote options across time zones.
             </p>
             <p>
-              If your expertise isn't listed but you have valuable game development skills, please send your CV to{' '}
+              If your expertise isn&apos;t listed but you have valuable game development skills, please send your CV to{' '}
               <Link href="mailto:info@classygamesstudios.com">info@classygamesstudios.com</Link>.
             </p>
           </div>

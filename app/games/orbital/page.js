@@ -73,7 +73,7 @@ export default function OrbitalPage() {
           <br /><br />
           Earn points to unlock new planets such as Mars, Jupiter, and Uranus and compete with players around the world in the attempt to become the top planetary pilot on the leaderboard.
           <br /><br />
-          Well, what are you waiting for, pilot? You've got a planet to save!
+          Well, what are you waiting for, pilot? You&apos;ve got a planet to save!
         </p>
 
         <div className="first-line"></div>
