@@ -125,7 +125,7 @@ export default function Home() {
             Dive into our world and get to know our passionate crew of indie
               game enthusiasts. From imaginative developers to artistic
               creators, each of us brings our own vibe and skills to the mix.
-              Together, we're all about breaking new ground in gaming and having
+              Together, we&apos;re all about breaking new ground in gaming and having
               a blast while doing it!
             </p>
             <div className='btn-container'>
