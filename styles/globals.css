@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;900&display=swap');
+
+@font-face {
+  font-family: 'GrindstoneSans';
+  src: url('../public/fonts/GrindstoneSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fa 400';
+  src: url('../public/fonts/fa-regular-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fa Brands 400';
+  src: url('../public/fonts/fa-brands-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Fa Solid 900';
+  src: url('../public/fonts/fa-solid-900.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GrindstoneSans';
+  src: url('../public/fonts/GrindstoneSans.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Troika';
+  src: url('../public/fonts/troika.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+::selection
+{
+  background-color: none;
+  color:#81badf;
+}
+
+:root {
+  --classyBlue: #81badf;
+  --classyBlack: #191919;
+  --menuStroke: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body
+{
+
+  overflow-x: hidden;
+}
+.body {
+  font-family: Ubuntu, Helvetica, sans-serif;
+
+}
+.upper-body
+{
+  position: relative;
+  width: 100vw;
+  height:100vh;
+}
+.home-banner {
+
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  top:0;
+
+  background: linear-gradient(to bottom right, rgba(30, 30, 30, 0.9), rgba(0, 0, 0, 0.2)), 
+              url("/assets/Banners/homeBanner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}
+.indie-text {
+  position:relative;
+  left:10%;
+  width:60%;
+ 
+  top:20%;
+  font-family: 'GrindstoneSans', sans-serif;
+  font-size:58px;
+  color:white;
+}
+
+
+.scroll-logo
+{
+ 
+  z-index: 10;
+  width:50px;
+  height:80px;
+}
+.scroller
+{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom:0;
+  overflow: hidden;
+  width: 100vw;
+  height: 200px;
+}
+.scroll {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #81badf;
+  padding-top: 5px; 
+  padding-bottom: 5px;
+}
+
+.scroller-track {
+  display: flex;
+  
+  width: fit-content;
+  animation: scroll-left 120s linear infinite;
+}
+
+.scroller-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+
+.scroller-text {
+  font-size: 3rem;
+  color: var(--classyBlack);
+  white-space: nowrap;
+  font-family: 'GrindstoneSans', sans-serif;
+}
+
+.scroll-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.scroller svg
+{
+  z-index: 9;
+  position:absolute;
+  top:-45px;
+  width: 100%;
+  height: 50px;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.lower-body
+{
+    z-index: 8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:5rem 0;
+    width: 100vw;
+    padding-bottom: 0;
+    gap:3rem;
+    transition: all 0.1s ease;
+}
+.hook
+{
+  font-family: 'Open Sans', sans-serif;
+
+  text-align: center;
+  color:var(--classyBlue);
+  font-weight: 400;
+  font-size: 28px;
+  transition:all 0.1s ease;
+}
+
+.hook-logo
+{
+
+  width: 600px;
+  height:auto;
+  transition:all 0.1s ease;
+
+}
+.characters-area
+{
+
+  width: 100vw;
+  height:300px;
+  padding:0 1rem;
+  
+  background:  url("/assets/Banners/homeBottom.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hook-text
+{
+  
+
+  font-family: "Open Sans";   
+
+  font-weight: 300;
+  width:65vw;
+  font-size: 20px;
+  text-align: center;
+  transition:all 0.1s ease;
+
+}
+
+.about-us-cnt
+{
+  z-index: 20;
+  padding:5rem 5rem;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  color:white;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  flex-direction: row;
+  width: 100%;
+  height: 90%;
+}
+.about-us-body
+{
+  z-index: 20;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  color:white;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Ubuntu, Helvetica, sans-serif;
+ 
+
+  background-color: var(--classyBlack);
+}
+.about-us-hook
+{ 
+  
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size:48px;
+    width:50%;
+    align-self: flex-start;
+    transition: all 0.2s ease;
+}
+
+.info-container
+{
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2rem;
+   width:45%;
+   font-family: "Open Sans";   
+   font-size: 28px;
+   height:60%;
+   transition: all 0.1s ease-in-out;
+
+}
+
+.btn-container
+{
+  position:relative;
+  align-self: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden; 
+  width: 175px;
+  height:60px;
+  transition: all 0.1s ease-in-out;
+
+}
+
+.btn-container:hover
+{
+    border:2px solid #81badf ;
+
+}
+.btn-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 120%;
+  height: 110%;
+  background-color: var(--classyBlue);
+  z-index: 0;
+  transition: transform 0.35s ease-out;
+}
+
+
+.btn-container:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.about-us-button
+{
+    border-radius: 12px;
+
+    width: 100%;
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    height:14px;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+}
+.about-us-paragraph
+{
+  font-family: "Open Sans";   
+
+  font-size:18px;
+  text-align: left;
+  font-weight: 200;
+  transition: all 0.1s ease-in-out;
+
+}
+.about-us-button span
+{
+  font-family: "Open Sans";   
+
+  position: absolute;
+  color:var(--classyBlack);
+  height:14px;
+  display: flex;
+  align-items: center;
+  gap:0.5rem;
+  font-weight: 600;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-us-button .hover {
+  transform: translateY(25px);
+}
+
+.btn-container:hover .hover {
+  transform: translateY(0px);
+}
+
+.btn-container:hover .original {
+  transform: translateY(-25px);
+}
+.scroller2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  left:0;
+  background-color: var(--classyBlue);
+  overflow: hidden;
+  width: 100vw;
+  height: 125px;
+}
+
+.scroller-track2 {
+  display: flex;
+  width: 100%;
+  animation: scroll-left-2 50s linear infinite; 
+}
+
+.scroller-content2 {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.scroll-logo2 {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+}
+
+@keyframes scroll-left-2 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width:930px)
+{
+
+  .about-us-cnt
+  {
+    
+    padding-bottom: 5rem;
+    gap:2rem;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .info-container
+  {
+    width: 100%;
+    height: 60%;
+  }
+  .about-us-hook
+  {
+    width: 100%;
+    height: 40%;
+
+  }
+  .hook
+  {
+    font-size: 32px;
+  }
+  .hook-logo
+  {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media (max-width:768px)
+{
+  .about-us-cnt
+  {
+    padding:5rem 2rem;
+    gap:2rem;
+
+  }
+  .about-us-hook
+  {
+    font-size: 32px;
+
+  }
+  .about-us-paragraph
+  {
+    font-size: 16px;
+  }
+  .hook
+  {
+    font-size: 18px;
+  }
+ 
+  .hook-text
+  {
+    width: 90%;
+  }
+  .indie-text
+  {
+    font-size: 48px;
+  }
+
+}
