@@ -128,9 +128,9 @@ export default function Home() {
               Together, we&apos;re all about breaking new ground in gaming and having
               a blast while doing it!
             </p>
-            <div className='btn-container'>
-            <Link href="/about-us" className='about-us-button'><span className="hover">About us <FaPaperPlane size={14}/></span><span className="original">About us <FaPaperPlane size={14}/></span></Link>
-            </div>
+            <Link href = "/about-us" className='btn-container'>
+            <div href="/about-us" className='about-us-button'><span className="hover">About us <FaPaperPlane size={14}/></span><span className="original">About us <FaPaperPlane size={14}/></span></div>
+            </Link>
           </div>
           </div>
           <div className="scroller2">

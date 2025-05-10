@@ -98,17 +98,27 @@ nav
   width: 100%;
   display: flex;
   position: relative;
-
+  overflow: hidden;
   align-items: center;
   justify-content: center;
 }
-
+.games-cnt-dropdown
+{
+  overflow: hidden;
+}
+.middle div:hover span
+{
+  color:#1a181b;
+}
+.games-cnt-dropdown div:hover span
+{
+  color:#1a181b;
+}
 .middle div
 {
    position: relative;
    display: flex;
    height:20px;
-   overflow: hidden;
    width: 100px;
    flex-direction: column;
    align-items: center;
@@ -185,6 +195,7 @@ nav
   justify-content: flex-start;
   transition: all 0.2s ease-in-out;
 }
+
 .dropdown-m a:hover
 {
 
@@ -273,7 +284,23 @@ nav
   opacity: 0;;
 }
 
+.games-dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown-m {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.games-dropdown:hover .dropdown-m,
+.dropdown-m:hover {
+  display: flex;
+}
 @media (max-width: 1030px) {
   nav
   {
@@ -288,7 +315,25 @@ nav
   {
     display: block;
   }
+  
 
+.games-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-m {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.games-dropdown:hover .dropdown-m,
+.dropdown-m:hover {
+  display: flex;
+}
   .link-container 
   {
     position: absolute;
@@ -320,13 +365,12 @@ nav
 
   .middle a, .games-dropdown {
     width: 100%;
-
+   
     justify-content: center;
     align-items: center;
     height: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   
-    padding-bottom:2rem;
   }
  .middle span 
  {
@@ -334,35 +378,62 @@ nav
  }
   .middle div {
     width: 100%;
-    
-    
+  
+    padding: 20px;
   }
+  .middle div:hover span
+{
+  color:var(--classyBlue);
+}
+.games-cnt-dropdown div:hover span
+{
+  color:var(--classyBlue);
+}
   .middle a:hover::after {
     width: 0%;
   }
-.middle a:hover .hover
+
+  .middle div .hover
+  {
+    transition: all 0.2s linear;
+    transform: translateY(40px);
+  }
+  .middle div .original
+  {
+    transition: all 0.2s linear;
+
+  }
+.middle div:hover .hover
 {
   transform: translateY(0px);
 }
-.middle a:hover .original
+.middle div:hover .original
 {
-  transform: translateY(-25px);
+  transform: translateY(-40px);
 }
 
   .dropdown-m {
-    position: static;
-    width: 100%;
-    margin-top: -2rem;
+    width: 100vw;
     background-color: white;
 
   }
+  .games-dropdown:hover
+  {
+    height: 170px;
+  }
+  .games-dropdown:hover .dropdown-m,
+.dropdown-m:hover {
+  position: static;
+  top:100px;
+}
   .middle svg {
-    left:49vw;
+    left:47vw;
     position:absolute;
   }
   .dropdown-m a {
+  
     width: 100%;
-    padding: 0 1rem;
+    padding:0.5rem;
     justify-content: flex-start;
   }
 
@@ -377,3 +448,5 @@ nav
 
 
 }
+
+

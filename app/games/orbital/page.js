@@ -14,16 +14,16 @@ gsap.registerPlugin(ScrollTrigger);
 export default function OrbitalPage() {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.orbital-logo, .ss-page h1, .ss-page iframe', {
+      gsap.from('.ss-logo, .ss-page iframe, .ss-page h1', {
         scrollTrigger: {
-          trigger: '.orbital-logo',
+          trigger: '.ss-logo',
           start: 'top 90%',
         },
         y: 100,
         opacity: 0,
         duration: 1,
         ease: 'power3.out',
-      });
+      })
       
       requestAnimationFrame(() => {
         ScrollTrigger.refresh();
@@ -55,7 +55,14 @@ export default function OrbitalPage() {
       </div>
 
       <main className="ss-page">
-        <div className="orbital-logo">ORBITAL</div>
+        <Image
+                  src="/assets/Logos/SSLogo.png"
+                  alt="Silly Suspects Logo"
+                  width={170}
+                  height={100}
+                  className="ss-logo"
+                  priority
+                />
 
         <h1>Become the ultimate planetary pilot</h1>
 
