@@ -46,15 +46,10 @@ export default function AboutUs() {
     };
   }, []);
   const names = [
-    'Jamie McClenaghan',
-    'Maya Beirouti',
-    'Harman Singh',
-    'Methu Weerasinghe',
-    'Cameron Green',
-    'Ahmed Rabie',
-    'Emily Hughes',
+    'Jamie McClenaghan', 
     'Fraser Harris',
-    'Ahmed Al Helwany',
+    'Cameron Green',
+    'Emile Beaver',
   ];
   
   const positions = [
@@ -62,23 +57,13 @@ export default function AboutUs() {
     'Head of Design & Creative',
     'Developer',
     '3D Artist',
-    'Junior Artist',
-    'Content Coordinator',
-    'Content Coordinator',
-    'Audio Engineer',
-    'Ambassador',
   ];
   
   const links = [
-    'https://www.linkedin.com/in/jamiemcclenaghan/',
-    'https://www.linkedin.com/in/maya-beirouti/',
-    'https://www.linkedin.com/in/harman-singh-175766175/',
-    'https://www.linkedin.com/in/methushani-weerasinghe-7032a4266/',
-    'https://www.linkedin.com/in/cameron-green23/',
-    'https://www.linkedin.com/in/ahmedessam-rabie/',
-    'https://www.linkedin.com/in/emily-h-40332418a/',
+    'https://www.linkedin.com/in/jamiemcclenaghan/', 
     'https://www.linkedin.com/in/fraser-harris-fth/',
-    'https://www.linkedin.com/in/ahmedsm92/',
+    'https://www.linkedin.com/in/cameron-green23/',
+    'https://www.linkedin.com/in/emile-beaver-339b21294/',
   ];
   
   return (
@@ -101,17 +86,16 @@ export default function AboutUs() {
       </main>
       <main className='photo-page'>
         <p className='photo-paragraph'>
-   
                 Classy Games Studios is an independent video game development studio specializing in creating engaging games that ignite your imagination and bring out your inner child. <br/> <br/>
                 Based in Northern Ireland (UK) and the United Arab Emirates, we are proud to operate internationally, bridging the European and Middle Eastern markets with a unique blend of creativity and cultural experience.
                 <br/> <br/>
                 From forward-thinking developers to creative artists, our team brings a diverse set of skills and a shared passion for crafting unforgettable experiences. Our games offer players a space to unwind and escape from reality, blending excellence and creativity to push the boundaries of gaming and leave a lasting impact on players worldwide.
              </p>
-              <Image src="/images/team-photo.webp" alt="Logo" width={170} height={100} className="team-photo" />
+              <Image src="/images/about-photo.webp" alt="Logo" width={170} height={100} className="team-photo" />
         <div className='under-text'>
            <h1 className='under-title'>
            We Build Not Just Games, <br/>
-           But Tomorrow's Game Changers.
+           But Tomorrow&apos;s Game Changers.
            </h1>
            <p className='under-paragraph'>
            Our team is united by our shared passion for creating exceptional gaming experiences. <br/>
@@ -134,7 +118,7 @@ We are committed to continuous personal and professional development, providing 
 
         </h1>
         <p className='members-paragraph'>
-        Meet our passionate team of innovators. From forward-thinking developers to creative artists, each member brings their distinctive style and skills to the mix. Together, we're committed to challenging the limits of gaming and providing players across the globe with unforgettable experiences.
+        Meet our passionate team of innovators. From forward-thinking developers to creative artists, each member brings their distinctive style and skills to the mix. Together, we&apos;re committed to challenging the limits of gaming and providing players across the globe with unforgettable experiences.
         </p>
         <div className="team-photo-cnt">
   {names.map((name, i) => (
@@ -172,7 +156,7 @@ We are committed to continuous personal and professional development, providing 
           <div className="card-info">
           <div className="linkedin-circle">
               <Link href={links[i]} target="_blank" rel="noopener noreferrer">
-                <FaLinkedinIn size={14} color= "#000000"className="linkedin-icon" />
+                <FaLinkedinIn size={14} color= "#000000" className="linkedin-icon" />
               </Link>
             </div>
             <h3 className="card-name">{name}</h3>

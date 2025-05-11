@@ -58,26 +58,22 @@ export default function Navbar() {
             <div><span className='original'>HOME</span><span className='hover'>HOME</span></div>
           </Link>
           
-         <div 
-  className="games-dropdown" 
-  onMouseEnter={() => setMenu(true)}
-  onMouseLeave={() => setMenu(false)}
->
-  <div className = "games-cnt-dropdown"
-   >
-    <span className="original">
-      GAMES {openMenu ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-    </span>
-    <span className="hover">
-      GAMES {openMenu ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
-    </span>
-  </div>
+          <Link href="">
+        <div onClick={() => setMenu(prev => !prev)}>
+          <span className="original">
+            GAMES {openMenu ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+          </span>
+          <span className="hover">
+            GAMES {openMenu ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+          </span>
+        </div>
+      </Link>
 
-  {openMenu && (
-    <main className='dropdown-m' onMouseEnter={() => setMenu(true)}>
-     <Link href = "/games/sillysuspects">
+          {
+              openMenu && <main className='dropdown-m'>
+               <Link href = "/games/sillysuspects">
                <Image
-              src="/assets/Logos/SillySuspects_Icon.webp"
+              src="/images/ss-logo.png"
               alt="Logo"
               width={50}
               height={50}
@@ -85,18 +81,15 @@ export default function Navbar() {
             />       SillySuspects         </Link>
                 <Link href = "/games/orbital">
                 <Image
-              src="/assets/Logos/Orbital-logo.webp"
+              src="/images/Orbital-logo.webp"
               alt="Logo"
               width={50}
               height={50}
              
             />       Orbital   
                 </Link>
-    </main>
-  )}
-</div>
-
-  
+             </main>
+            }
 
           <Link href="/about-us" onClick={() => setMobileMenuOpen(false)}>
             <div><span className='original'>ABOUT</span><span className='hover'>ABOUT</span></div>

@@ -11,7 +11,7 @@ export default function Footer() {
           <div className='first'>
           <Link href="/">
           <Image
-            src="/Favicons/main-logo.png"
+            src="/assets/Logos/ClassyGamesStudios_Logo.webp"
             alt="Logo"
             width={50}
             height={50}
@@ -145,9 +145,8 @@ export default function Footer() {
           </div>
 
       </div>
-     <div className='lower-footer'>
-        <div className='l'><span>© 2025 </span>Classy Games Studios</div>  
-        <div className='r'>Built by Cosmic <Link href="https://www.cosmiccreatives.co.uk/" target='_blank'>Creative Studios</Link></div>  
+      <div className='lower-footer'>
+        <div className='l'><span>© 2025 </span>Classy Games Studios</div>   
       </div>
       
     </footer>
