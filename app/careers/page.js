@@ -1,39 +1,39 @@
-'use client';
+"use client";
 
-import React, { useEffect } from 'react';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
-import Image from 'next/image';
-import Link from 'next/link';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import '@/styles/careers.css';
-import '@/styles/about-us.css';
+import React, { useEffect } from "react";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import Image from "next/image";
+import Link from "next/link";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "@/styles/careers.css";
+import "@/styles/about-us.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function CareersPage() {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set('.about-text-cnt, .first-cnt, .second-cnt', {
+      gsap.set(".about-text-cnt, .first-cnt, .second-cnt", {
         y: 100,
         opacity: 0,
       });
-      gsap.to('.about-text-cnt, .first-cnt, .second-cnt', {
+      gsap.to(".about-text-cnt, .first-cnt, .second-cnt", {
         y: 0,
         opacity: 1,
         delay: 0.2,
         duration: 0.5,
-        ease: 'power1.out',
+        ease: "power1.out",
       });
 
       requestAnimationFrame(() => ScrollTrigger.refresh());
-      window.addEventListener('load', ScrollTrigger.refresh);
+      window.addEventListener("load", ScrollTrigger.refresh);
     });
 
     return () => {
       ctx.revert();
-      window.removeEventListener('load', ScrollTrigger.refresh);
+      window.removeEventListener("load", ScrollTrigger.refresh);
     };
   }, []);
 
@@ -64,11 +64,19 @@ export default function CareersPage() {
           <h2>Join the Crew</h2>
           <div className="upper-cnt">
             <p>
-              At Classy Games Studios, we are a community, team, and crew. Each member plays a vital role in our game development endeavors. We prioritize support and collaboration, ensuring everyone feel valued and heard. We offer flexible work arrangements and remote options across time zones.
+              At Classy Games Studios, we are a community, team, and crew. Each
+              member plays a vital role in our game development endeavors. We
+              prioritize support and collaboration, ensuring everyone feel
+              valued and heard. We offer flexible work arrangements and remote
+              options across time zones.
             </p>
             <p>
-              If your expertise isn&apos;t listed but you have valuable game development skills, please send your CV to{' '}
-              <Link href="mailto:info@classygamesstudios.com">info@classygamesstudios.com</Link>.
+              If your expertise isn&apos;t listed but you have valuable game
+              development skills, please send your CV to{" "}
+              <Link href="mailto:info@classygamesstudios.com">
+                info@classygamesstudios.com
+              </Link>
+              .
             </p>
           </div>
         </div>
@@ -77,7 +85,9 @@ export default function CareersPage() {
           <div className="lower-cnt">
             <h2>Interested in the Gaming Industry?</h2>
             <p>
-              Our doors are always open. We welcome those seeking to enter the industry and offer internships and entry-level positions. We value reliability and passion over experience.
+              Our doors are always open. We welcome those seeking to enter the
+              industry and offer internships and entry-level positions. We value
+              reliability and passion over experience.
             </p>
           </div>
           <div className="img-career">

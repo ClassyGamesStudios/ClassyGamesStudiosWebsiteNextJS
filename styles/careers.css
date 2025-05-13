@@ -1,162 +1,124 @@
-
-.main-cnt
-{
-    font-family: 'Open Sans', sans-serif;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    width: 100vw;
-    display: flex;
-    color: var(--classyBlack);
-    z-index: 300;
-    padding:6rem;
-    padding-bottom: 15rem;
-    gap:4rem;
-    justify-content: center;
-
+.main-cnt {
+  font-family: "Open Sans", sans-serif;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  width: 100vw;
+  display: flex;
+  color: var(--classyBlack);
+  z-index: 300;
+  padding: 6rem;
+  padding-bottom: 15rem;
+  gap: 4rem;
+  justify-content: center;
 }
-.first-cnt h2
-{
-    
-    font-size:72px;
-    max-width: 650px;
+.first-cnt h2 {
+  font-size: 72px;
+  max-width: 650px;
 }
-.lower-cnt h2
-{
-    max-width: 650px;
-    font-size: 52px;
-    line-height: 60px;
+.lower-cnt h2 {
+  max-width: 650px;
+  font-size: 52px;
+  line-height: 60px;
 }
-.first-cnt p
-{
-    width: 100%;
-    max-width: 650px;
-    font-size:16px;
-    font-weight: 400;
-    line-height: 30px;
+.first-cnt p {
+  width: 100%;
+  max-width: 650px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
 }
-.first-cnt
-{
-    max-width: 1400px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap:2rem;
+.first-cnt {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.upper-cnt, .lower-cnt
-{
-   
-    
-    display: flex;
-    gap:2rem;
- 
+.upper-cnt,
+.lower-cnt {
+  display: flex;
+  gap: 2rem;
 }
-.second-cnt
-{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1400px;
-    gap:2rem;
-    flex-direction: row;
+.second-cnt {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1400px;
+  gap: 2rem;
+  flex-direction: row;
 }
-.lower-cnt
-{   
-  
-    flex-direction: column;
-    
-    
+.lower-cnt {
+  flex-direction: column;
 }
-.img-career
-{
-    width: 100%;
-    max-width: 650px;
-    justify-content: center;
+.img-career {
+  width: 100%;
+  max-width: 650px;
+  justify-content: center;
   display: flex;
   align-items: center;
-
 }
-.lower-cnt p
-{   
-   
+.lower-cnt p {
+  width: 100%;
+  max-width: 650px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.first-cnt a {
+  font-weight: 600;
+  color: var(--classyBlue);
+}
+.logo-big {
+  width: 400px;
+  height: auto;
+}
+.main-cnt svg {
+  position: absolute;
+  width: 100%;
+  fill: var(--classyBlack);
+  height: 10vh;
+  z-index: -1;
+  bottom: -10px;
+}
+@media (max-width: 1030px) {
+  .main-cnt svg {
     width: 100%;
-    max-width: 650px;
-    font-size:16px;
-    font-weight: 400;
-    line-height: 25px;
+  }
+  .second-cnt {
+    align-items: flex-start;
+  }
+  .logo-big {
+    width: 100%;
+  }
 }
-.first-cnt a 
-{
-    font-weight: 600;
-    color:var(--classyBlue);
-}
-.logo-big
-{
-    
+@media (max-width: 768px) {
+  .main-cnt {
+    padding: 2rem;
+    padding-bottom: 15rem;
+  }
+  .upper-cnt {
+    align-items: center;
+    flex-direction: column;
+  }
+  .first-cnt,
+  .second-cnt {
+    flex-direction: column;
+  }
+  .logo-big {
     width: 400px;
-    height:auto;
-}
-.main-cnt svg
-{
-    position: absolute;
-    width: 100%;
-    fill: var(--classyBlack);
-    height: 10vh;
-    z-index: -1;
-    bottom:-10px;
-}
-@media (max-width:1030px)
-{
-    .main-cnt svg
-    {
-        width: 100%;
-    }
-    .second-cnt
-    {
-        align-items: flex-start;
-        
-    }
-    .logo-big
-    {
-        width: 100%;
-    }
-    
-}
-@media (max-width:768px)
-{
-    .main-cnt
-    {
-        padding:2rem;
-        padding-bottom: 15rem;
-    }
-    .upper-cnt
-    {
-        align-items: center;
-        flex-direction: column;
-    }
-    .first-cnt,.second-cnt
-    {   
-        flex-direction: column;
-    }
-    .logo-big
-    {
-        width: 400px;
-     
-    }
-    p 
-    {
-        text-align:center;
-    }
-    .first-cnt h2
-    {
-        text-align:center;
-        font-size: 42px;
-    }
-.lower-cnt h2
-    {
-        text-align:center;
-        font-size: 42px;
-    }
+  }
+  p {
+    text-align: center;
+  }
+  .first-cnt h2 {
+    text-align: center;
+    font-size: 42px;
+  }
+  .lower-cnt h2 {
+    text-align: center;
+    font-size: 42px;
+  }
 }

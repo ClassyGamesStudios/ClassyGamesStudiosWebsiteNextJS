@@ -1,41 +1,59 @@
-'use client'
+"use client";
 
-import { useEffect } from 'react'
-import Image from 'next/image'
-import Link from 'next/link'
-import Navbar from '@/components/navbar'
-import Footer from '@/components/footer'
-import { gsap } from 'gsap'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import '@/styles/games.css'
+import { useEffect, useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "@/styles/games.css";
+import Marquee from "react-fast-marquee";
 
-gsap.registerPlugin(ScrollTrigger)
+gsap.registerPlugin(ScrollTrigger);
 
 export default function SillySuspectsPage() {
+  const [marqueePlay, setMarqueePlay] = useState(true);
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "hidden") {
+        setMarqueePlay(false);
+      } else if (document.visibilityState === "visible") {
+        setMarqueePlay(true);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from('.ss-logo, .ss-page iframe, .ss-page h1', {
+      gsap.from(".ss-logo, .ss-page iframe, .ss-page h1", {
         scrollTrigger: {
-          trigger: '.ss-logo',
-          start: 'top 90%',
+          trigger: ".ss-logo",
+          start: "top 90%",
         },
         y: 100,
         opacity: 0,
         duration: 1,
-        ease: 'power3.out',
-      })
+        ease: "power3.out",
+      });
 
       requestAnimationFrame(() => {
         ScrollTrigger.refresh();
       });
 
-      window.addEventListener('load', ScrollTrigger.refresh);
-
+      window.addEventListener("load", ScrollTrigger.refresh);
     });
 
     return () => {
       ctx.revert();
-      window.removeEventListener('load', ScrollTrigger.refresh);
+      window.removeEventListener("load", ScrollTrigger.refresh);
     };
   }, []);
 
@@ -44,24 +62,24 @@ export default function SillySuspectsPage() {
       key={`upper-${i}`}
       src={`/images/SillySuspects/upper${i + 1}.png`}
       alt={`Upper character ${i + 1}`}
-      width={120}
+      width={450}
       height={100}
       className="scroll-logo-ss"
       loading="lazy"
     />
-  ))
+  ));
 
   const lowerImages = [...Array(5)].map((_, i) => (
     <Image
       key={`lower-${i}`}
       src={`/images/SillySuspects/lower${i + 1}.png`}
       alt={`Lower character ${i + 1}`}
-      width={120}
+      width={450}
       height={100}
       className="scroll-logo-ss"
       loading="lazy"
     />
-  ))
+  ));
 
   return (
     <div className="body">
@@ -83,8 +101,8 @@ export default function SillySuspectsPage() {
         <Image
           src="/assets/Logos/SSLogo.png"
           alt="Silly Suspects Logo"
-          width={170}
-          height={100}
+          width={600}
+          height={220}
           className="ss-logo"
           priority
         />
@@ -100,27 +118,33 @@ export default function SillySuspectsPage() {
         </div>
 
         <p>
-          In a world overrun by the most ridiculous criminals imaginable – those who put pineapple
-          on pizza, wear sunglasses inside, and never replace the toilet roll – chaos reigns
-          supreme. In the midst of the mayhem, characters are &apos;exiting&apos; the world in hilarious
-          ways, leaving behind bizarre crime scenes and confused witnesses.
+          In a world overrun by the most ridiculous criminals imaginable – those
+          who put pineapple on pizza, wear sunglasses inside, and never replace
+          the toilet roll – chaos reigns supreme. In the midst of the mayhem,
+          characters are &apos;exiting&apos; the world in hilarious ways,
+          leaving behind bizarre crime scenes and confused witnesses.
           <br />
           <br />
-          Classy Games Studios is proud to present, <strong>SillySuspects</strong> — a hilarious
-          first-person detective RPG. Dive headfirst into a dynamically generated world teeming with
-          quirky characters, each with their own lives, secrets and motives. Crack the case by
-          analysing crime scenes, questioning suspects, and navigating through the unpredictable
-          twists and turns of the world.
+          Classy Games Studios is proud to present,{" "}
+          <strong>SillySuspects</strong> — a hilarious first-person detective
+          RPG. Dive headfirst into a dynamically generated world teeming with
+          quirky characters, each with their own lives, secrets and motives.
+          Crack the case by analysing crime scenes, questioning suspects, and
+          navigating through the unpredictable twists and turns of the world.
           <br />
           <br />
-          With its perfect blend of humour, intrigue, and endless possibilities, SillySuspects
-          promises to turn the traditional murder mystery genre on its head and keep you laughing.
+          With its perfect blend of humour, intrigue, and endless possibilities,
+          SillySuspects promises to turn the traditional murder mystery genre on
+          its head and keep you laughing.
         </p>
 
         <div className="first-line"></div>
 
         <div className="downloads">
-          <Link href="https://store.steampowered.com/app/3073330/Silly_Suspects/" target="_blank">
+          <Link
+            href="https://store.steampowered.com/app/3073330/Silly_Suspects/"
+            target="_blank"
+          >
             <div className="steam">
               <Image
                 src="/assets/webImages/steam.webp"
@@ -133,7 +157,10 @@ export default function SillySuspectsPage() {
             </div>
           </Link>
 
-          <Link href="https://classygamesstudios.itch.io/sillysuspects" target="_blank">
+          <Link
+            href="https://classygamesstudios.itch.io/sillysuspects"
+            target="_blank"
+          >
             <div className="itch.io">
               <Image
                 src="/assets/webImages/itch.webp"
@@ -150,21 +177,25 @@ export default function SillySuspectsPage() {
         <div className="second-line"></div>
 
         <div className="scroller-ss">
-          <div className="scroller-track-ss">
-            <div className="scroller-content-ss">{upperImages}</div>
-            <div className="scroller-content-ss" aria-hidden="true">
-              {upperImages}
+          <Marquee play={marqueePlay} speed={30}>
+            <div className="scroller-track-ss">
+              <div className="scroller-content-ss">{upperImages}</div>
+              <div className="scroller-content-ss" aria-hidden="true">
+                {upperImages}
+              </div>
             </div>
-          </div>
+          </Marquee>
         </div>
 
         <div className="scroller-ss">
-          <div className="scroller-track-ss2">
-            <div className="scroller-content-ss">{lowerImages}</div>
-            <div className="scroller-content-ss" aria-hidden="true">
-              {lowerImages}
+          <Marquee play={marqueePlay} speed={30} direction="right">
+            <div className="scroller-track-ss2">
+              <div className="scroller-content-ss">{lowerImages}</div>
+              <div className="scroller-content-ss" aria-hidden="true">
+                {lowerImages}
+              </div>
             </div>
-          </div>
+          </Marquee>
         </div>
 
         <div className="second-line"></div>
@@ -172,5 +203,5 @@ export default function SillySuspectsPage() {
 
       <Footer />
     </div>
-  )
+  );
 }

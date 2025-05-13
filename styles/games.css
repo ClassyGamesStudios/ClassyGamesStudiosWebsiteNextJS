@@ -1,316 +1,264 @@
 .ss-banner {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    left:0;
-    background: linear-gradient(to bottom right, rgba(30, 30, 30, 0.5), rgba(0, 0, 0, 0)), 
-                url("/assets/Banners/homeBanner.png");
-                background-size:cover;
-                background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
-    z-index: -1;
-  }
-  .o-banner
-  {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    left:0;
-    
-    background: linear-gradient(to bottom right, rgba(30, 30, 30, 0.5), rgba(0, 0, 0, 0)), 
-                url("/assets/Banners/orbitalBanner.png");
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: top;
-    z-index: -1;
-  }
-.ss-banner svg
-{
-    position: absolute;
-    bottom: 0;
-   width: 100%;
-   bottom: -10px;
-   fill: var(--classyBlack);
-   height: 10vh;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  background: linear-gradient(
+      to bottom right,
+      rgba(30, 30, 30, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/Banners/homeBanner.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -1;
 }
-.o-banner svg
-{
-    position: absolute;
-    bottom: -10px;
-    fill: var(--classyBlack);
-   width: 100%;
-   height: 10vh;
+.o-banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+
+  background: linear-gradient(
+      to bottom right,
+      rgba(30, 30, 30, 0.5),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/assets/Banners/orbitalBanner.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  z-index: -1;
 }
-.ss-logo
-{
-    width: 600px;
-    height: auto;
+.ss-banner svg {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  bottom: -10px;
+  fill: var(--classyBlack);
+  height: 10vh;
 }
-.ss-page
-{
-    padding:4rem 1rem;
-    font-family: 'Open Sans', sans-serif;
-    position: relative;
-    width: 100vw;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    gap:3rem;
-   
-    background-color: var(--classyBlack);
+.o-banner svg {
+  position: absolute;
+  bottom: -10px;
+  fill: var(--classyBlack);
+  width: 100%;
+  height: 10vh;
 }
-  .footer-cnt-ss
-  {
-    position: relative;
-    top:-20vh;
-  }
-
-  .ss-page h1
-  {
-    font-size: 44px;
-     color:white;
-     text-transform: capitalize;
-     display: flex;
-     
-     align-items: center;
-     gap:1rem;
-     text-align: center;
-  }
-
-  .ss-page h1::before,
-  .ss-page h1::after {
-   content: "";
-   transition: all 0.2s ease;
-   
-   border-radius: 1px;
-   width:50px;
-   height: 3px;
-   background-color: var(--classyBlue); 
- }
- .video-container-ss {
-    width: 900px;      
-    border-radius: 10px;
-    
-    aspect-ratio: 16 / 9; 
-  }
-  
-  .video-container-ss iframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    border:solid 2px var(--classyBlue);
-  }
-  .ss-page p
-  {
-    font-family: 'Open Sans', sans-serif;
-    line-height: 30px;
-
-    color:white;
-    font-size: 16px;
-    text-align: center;
-    width: 900px;
-    font-weight: 300;
-
-  }
-  .downloads
-  {
-    width: 100%;
-    display: flex;
-    gap:4rem;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-  .downloads a
-  {
-    width: 300px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: solid 1px white;
-    transition: all 0.2s ease-in-out;
-    height: 125px;
-    padding:40px;
-    background-color: black;
-  }
-  .downloads div
-  {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .downloads a:hover .download-logo
-  {
-    transform: scale(1.07);
-  }
-
-  .download-logo
-  {
-    transition: all 0.5s ease-in-out;
-    width: 80%;
-    height:80%;
-  }
-  .orbital-logo
-  {
-    font-family: 'Open Sans', sans-serif;
-    color:white;
-    font-size:200px;
-    font-weight: 900;
-  }
-  .first-line
-  {
-    width: 700px;
-   
-    height:2px;
-    background-color: white;
-  }
-  .second-line
-  {
-    width: 1000px;
-    height:2px;
-    background-color: white;
-  }
-
-  .scroller-ss
-{
-      padding:1rem 0;
-      
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 100vw;
-    height: 275px;
-    overflow: hidden;
+.ss-logo {
+  width: 600px;
+  height: auto;
 }
-.second-scroller
-  {
+.ss-page {
+  padding: 4rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+  width: 100vw;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
 
-     height:300px;
-  }
+  background-color: var(--classyBlack);
+}
+.footer-cnt-ss {
+  position: relative;
+  top: -20vh;
+}
+
+.ss-page h1 {
+  font-size: 44px;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.ss-page h1::before,
+.ss-page h1::after {
+  content: "";
+  transition: all 0.2s ease;
+
+  border-radius: 1px;
+  width: 50px;
+  height: 3px;
+  background-color: var(--classyBlue);
+}
+.video-container-ss {
+  width: 900px;
+  border-radius: 10px;
+
+  aspect-ratio: 16 / 9;
+}
+
+.video-container-ss iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: solid 2px var(--classyBlue);
+}
+.ss-page p {
+  font-family: "Open Sans", sans-serif;
+  line-height: 30px;
+
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  width: 900px;
+  font-weight: 300;
+}
+.downloads {
+  width: 100%;
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.downloads a {
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px white;
+  transition: all 0.2s ease-in-out;
+  height: 125px;
+  padding: 40px;
+  background-color: black;
+}
+.downloads div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.downloads a:hover .download-logo {
+  transform: scale(1.07);
+}
+
+.download-logo {
+  transition: all 0.5s ease-in-out;
+  width: 80%;
+  height: 80%;
+}
+.orbital-logo {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 200px;
+  font-weight: 900;
+}
+.first-line {
+  width: 700px;
+
+  height: 2px;
+  background-color: white;
+}
+.second-line {
+  width: 1000px;
+  height: 2px;
+  background-color: white;
+}
+
+.scroller-ss {
+  padding: 1rem 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 275px;
+  overflow: hidden;
+}
+.second-scroller {
+  height: 300px;
+}
 .scroll-logo-ss {
-    width: 450px;
+  width: 450px;
   height: auto;
   object-fit: contain;
   border-radius: 10px;
-    border:solid 2px var(--classyBlue);
+  border: solid 2px var(--classyBlue);
 }
 .scroll-logo-ss2 {
-    width: 450px;
+  width: 450px;
   height: 250px;
-  object-fit:contain;
+  object-fit: contain;
   border-radius: 10px;
-    border:solid 2px var(--classyBlue);
+  border: solid 2px var(--classyBlue);
 }
 .scroller-track-ss {
   display: flex;
   width: fit-content;
-  gap:1rem;
-
-  animation: scroll-left-ss 80s linear infinite;
+  gap: 1rem;
 }
 .scroller-track-ss2 {
-    display: flex;
-    width: fit-content;
+  display: flex;
+  width: fit-content;
 
-    gap:1rem;
-    animation: scroll-right-ss 80s linear infinite;
-  }
+  gap: 1rem;
+}
 .scroller-content-ss {
   display: flex;
   align-items: center;
-  gap: 1rem; 
-  
-
+  gap: 1rem;
 }
 
-@keyframes scroll-left-ss {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-  @keyframes scroll-right-ss {
-    0% {
-      transform: translateX(0%);
-    }
-    100% {
-      transform: translateX(50%);
-    }
-  }
-
-
-@media (max-width:1030px)
-{
-  .orbital-logo
-  {
+@media (max-width: 1030px) {
+  .orbital-logo {
     font-size: 100px;
   }
-  .ss-logo,  .ss-page p ,.first-line,.second-line,.video-container-ss
-  {
+  .ss-logo,
+  .ss-page p,
+  .first-line,
+  .second-line,
+  .video-container-ss {
     width: 100%;
   }
-  
-
 }
-@media (max-width:768px)
-{
-  
-
- 
-  .orbital-logo
-  {
+@media (max-width: 768px) {
+  .orbital-logo {
     font-size: 52px;
   }
-  .ss-page h1 
-  {
+  .ss-page h1 {
     font-size: 40px;
   }
-  .scroller-ss
-  {
+  .scroller-ss {
     height: 150px;
   }
-  
+
   .scroll-logo-ss {
-      width: 250px;
+    width: 250px;
     height: auto;
-
   }
- 
+
   .scroll-logo-ss2 {
-   width: 250px;
-  height: 150px;
+    width: 250px;
+    height: 150px;
+  }
 
-}
-
-  .downloads a 
-  {
+  .downloads a {
     width: 100%;
     height: 80px;
- 
   }
 }
 
-@media (max-width:500px)
-{
-  .ss-page h1
-  {
+@media (max-width: 500px) {
+  .ss-page h1 {
     font-size: 18px;
   }
-  .downloads
-  {
+  .downloads {
     width: 95%;
-    gap:1rem;
+    gap: 1rem;
     flex-direction: column;
-    
   }
-  .downloads a
-  {
+  .downloads a {
     width: 100%;
     height: 80px;
     padding: 10px 80px;

@@ -1,20 +1,16 @@
-import '@/styles/globals.css'
+import "@/styles/globals.css";
 
 export const metadata = {
-  title: 'Classy Games Studio',
-  description: 'Official website of Classy Games Studio.',
+  title: "Classy Games Studio",
+  description: "Official website of Classy Games Studio.",
   icons: {
-    icon: './Favicons/main-logo.png', 
+    icon: "./Favicons/main-logo.png",
   },
 };
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        {children}
-      </body>
+      <body className={`antialiased`}>{children}</body>
     </html>
   );
 }
