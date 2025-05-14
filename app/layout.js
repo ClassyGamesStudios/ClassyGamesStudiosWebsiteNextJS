@@ -1,3 +1,5 @@
+import Footer from "@/components/footer";
+import Navbar from "@/components/navbar";
 import "@/styles/globals.css";
 
 export const metadata = {
@@ -10,7 +12,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>{children}</body>
+      <body className={`antialiased`}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

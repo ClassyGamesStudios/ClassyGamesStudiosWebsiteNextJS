@@ -5,8 +5,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import "@/styles/games.css";
 import Marquee from "react-fast-marquee";
 
@@ -67,8 +65,6 @@ export default function OrbitalPage() {
 
   return (
     <div className="body">
-      <Navbar />
-
       <div className="o-banner">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -199,8 +195,6 @@ export default function OrbitalPage() {
 
         <div className="second-line"></div>
       </main>
-
-      <Footer />
     </div>
   );
 }

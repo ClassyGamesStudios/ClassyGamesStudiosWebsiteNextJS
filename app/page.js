@@ -2,8 +2,6 @@
 import "@/styles/globals.css";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import { FaPaperPlane } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
@@ -75,7 +73,6 @@ export default function Home() {
 
   return (
     <div className="body">
-      <Navbar />
       <main className="upper-body">
         <div className="indie-text">
           INDIE GAME
@@ -255,7 +252,6 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

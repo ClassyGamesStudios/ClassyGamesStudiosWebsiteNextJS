@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import Image from "next/image";
 import { FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
@@ -10,6 +8,7 @@ import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import teamImage from "../../public/images/Banner.png";
+
 gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutUs() {
@@ -51,30 +50,40 @@ export default function AboutUs() {
       window.removeEventListener("load", ScrollTrigger.refresh);
     };
   }, []);
-  const names = [
-    "Jamie McClenaghan",
-    "Fraser Harris",
-    "Cameron Green",
-    "Emile Beaver",
-  ];
 
-  const positions = [
-    "Founder & CEO",
-    "Head of Design & Creative",
-    "Developer",
-    "3D Artist",
-  ];
-
-  const links = [
-    "https://www.linkedin.com/in/jamiemcclenaghan/",
-    "https://www.linkedin.com/in/fraser-harris-fth/",
-    "https://www.linkedin.com/in/cameron-green23/",
-    "https://www.linkedin.com/in/emile-beaver-339b21294/",
+  const teamMembers = [
+    {
+      name: "Jamie McClenaghan",
+      position: "Founder & CEO",
+      linkedin: "https://www.linkedin.com/in/jamiemcclenaghan/",
+      photo: "/assets/TeamPhotos/teamMemberPhoto1.webp",
+      video: "/assets/TeamVideos/teamMemberVideo1.mp4",
+    },
+    {
+      name: "Fraser Harris",
+      position: "Head of Design & Creative",
+      linkedin: "https://www.linkedin.com/in/fraser-harris-fth/",
+      photo: "/assets/TeamPhotos/teamMemberPhoto2.webp",
+      video: "/assets/TeamVideos/teamMemberVideo2.mp4",
+    },
+    {
+      name: "Cameron Green",
+      position: "Developer",
+      linkedin: "https://www.linkedin.com/in/cameron-green23/",
+      photo: "/assets/TeamPhotos/teamMemberPhoto3.webp",
+      video: "/assets/TeamVideos/teamMemberVideo3.mp4",
+    },
+    {
+      name: "Emile Beaver",
+      position: "3D Artist",
+      linkedin: "https://www.linkedin.com/in/emile-beaver-339b21294/",
+      photo: "/assets/TeamPhotos/teamMemberPhoto4.webp",
+      video: "/assets/TeamVideos/teamMemberVideo4.mp4",
+    },
   ];
 
   return (
     <div className="body">
-      <Navbar />
       <main className="about-page">
         <div className="about-banner">
           <div className="about-text-cnt">
@@ -159,46 +168,49 @@ export default function AboutUs() {
           challenging the limits of gaming and providing players across the
           globe with unforgettable experiences.
         </p>
+
         <div className="team-photo-cnt">
-          {names.map((name, i) => (
+          {teamMembers.map((member, i) => (
             <div className="card-wrapper" key={i}>
               <div className="card">
                 <div className="card-front">
                   <div className="card-img-container">
                     <img
-                      src={`/assets/TeamPhotos/teamMemberPhoto${i + 1}.webp`}
-                      alt={`${name}`}
+                      src={member.photo}
+                      alt={member.name}
                       className="card-img"
                     />
                   </div>
                   <div className="card-info">
                     <div className="linkedin-circle">
                       <Link
-                        href={links[i]}
+                        href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <FaLinkedinIn className="linkedin-icon" />
                       </Link>
                     </div>
-                    <h3 className="card-name">{name}</h3>
-                    <p className="card-title">{positions[i]}</p>
+                    <h3 className="card-name">{member.name}</h3>
+                    <p className="card-title">{member.position}</p>
                   </div>
                 </div>
                 <div className="card-back">
                   <div className="video-container">
-                    <video
-                      src={`/assets/TeamVideos/teamMemberVideo${i + 1}.mp4`}
-                      autoPlay
-                      loop
-                      muted
-                      className="card-video"
-                    />
+                    <div className="card-video">
+                      <video
+                        src={member.video}
+                        autoPlay
+                        loop
+                        muted
+                        className="card-video"
+                      />
+                    </div>
                   </div>
                   <div className="card-info">
                     <div className="linkedin-circle">
                       <Link
-                        href={links[i]}
+                        href={member.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
@@ -209,8 +221,8 @@ export default function AboutUs() {
                         />
                       </Link>
                     </div>
-                    <h3 className="card-name">{name}</h3>
-                    <p className="card-title">{positions[i]}</p>
+                    <h3 className="card-name">{member.name}</h3>
+                    <p className="card-title">{member.position}</p>
                   </div>
                 </div>
               </div>
@@ -227,7 +239,6 @@ export default function AboutUs() {
           <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
         </svg>
       </main>
-      <Footer />
     </div>
   );
 }

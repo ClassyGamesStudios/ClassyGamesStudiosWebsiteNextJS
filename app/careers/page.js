@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import Image from "next/image";
 import Link from "next/link";
 import { gsap } from "gsap";
@@ -39,8 +37,6 @@ export default function CareersPage() {
 
   return (
     <div className="body">
-      <Navbar />
-
       <section className="about-page">
         <div className="about-banner">
           <div className="about-text-cnt">
@@ -112,8 +108,6 @@ export default function CareersPage() {
           <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
         </svg>
       </section>
-
-      <Footer />
     </div>
   );
 }

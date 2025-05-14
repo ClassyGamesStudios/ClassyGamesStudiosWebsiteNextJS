@@ -3,8 +3,6 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "@/styles/games.css";
@@ -83,7 +81,6 @@ export default function SillySuspectsPage() {
 
   return (
     <div className="body">
-      <Navbar />
 
       <div className="ss-banner">
         <svg
@@ -201,7 +198,6 @@ export default function SillySuspectsPage() {
         <div className="second-line"></div>
       </main>
 
-      <Footer />
     </div>
   );
 }

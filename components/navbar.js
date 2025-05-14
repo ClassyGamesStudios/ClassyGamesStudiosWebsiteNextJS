@@ -36,13 +36,15 @@ export default function Navbar() {
     <nav ref={navRef}>
       <div className="nav-bg"></div>
       <div className="logo">
+        <Link href='/'>
         <Image
           src="/Favicons/main-logo.png"
           alt="Logo"
-          width={130}
+          width={110}
           height={110}
           className="nav-logo"
         />
+        </Link>
       </div>
       <button
         className={`mobile-menu-button ${mobileMenuOpen ? "open" : ""}`}

@@ -1,7 +1,5 @@
 "use client";
 import React from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import "@/styles/careers.css";
@@ -37,7 +35,6 @@ export default function AboutUs() {
   }, []);
   return (
     <div className="body">
-      <Navbar />
       <main className="about-page contact-svg">
         <div className="about-banner">
           <div className="about-text-cnt">
@@ -183,8 +180,6 @@ export default function AboutUs() {
           ></iframe>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }
