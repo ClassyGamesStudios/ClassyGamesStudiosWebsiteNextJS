@@ -152,9 +152,9 @@ export default function AboutUs() {
             <br /><br />
             We&apos;re united by clear communication, creative freedom, and a deep respect for the player experience. We foster a culture of ownership where every team member is trusted to take initiative and contribute meaningfully. We value honesty and openness in how we work, ensuring that every voice is heard.
             <br /><br />
-            Creative joy sits at the heart of everything we do. Whether we're designing a mechanic, writing dialogue, or play-testing a level, we approach it with a sense of play and craftsmanship. Our games are made to delight through polished design, unexpected moments, and a player-first mindset that treats players as co-creators in the experience.
+            Creative joy sits at the heart of everything we do. Whether we&apos;re designing a mechanic, writing dialogue, or play-testing a level, we approach it with a sense of play and craftsmanship. Our games are made to delight through polished design, unexpected moments, and a player-first mindset that treats players as co-creators in the experience.
             <br /><br />
-            Above all, we&apos;re building a studio culture that is thoughtful, distinct, and deeply human. It's a culture that supports our team, empowers our ideas, and delivers games that are just as fun to make as they are to play.
+            Above all, we&apos;re building a studio culture that is thoughtful, distinct, and deeply human. It&apos;s a culture that supports our team, empowers our ideas, and delivers games that are just as fun to make as they are to play.
           </p>
         </div>
         <svg
@@ -172,12 +172,12 @@ export default function AboutUs() {
       <main className="team-page">
         <h1 className="our-team">Our Team</h1>
         <p className="members-paragraph">
-          We’re a globally distributed team with a shared love for crafting games that stand out.
+          We&apos;re a globally distributed team with a shared love for crafting games that stand out.
           <br/><br/>
-          From design to development, we each bring our own skills, quirks, and creative perspective—but it’s the way we
+          From design to development, we each bring our own skills, quirks, and creative perspective—but it&apos;s the way we
           work together that makes it work.
           <br/><br/>
-          We value trust, autonomy, and collaboration, and we’re always learning, experimenting, and finding new ways to
+          We value trust, autonomy, and collaboration, and we&apos;re always learning, experimenting, and finding new ways to
           build something special.
         </p>
 
