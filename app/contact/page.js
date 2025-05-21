@@ -38,7 +38,7 @@ export default function AboutUs() {
       <main className="about-page contact-svg">
         <div className="about-banner">
           <div className="about-text-cnt">
-            <div className="upper-txt">GET IN TOUCH</div>
+            <div className="upper-txt">Let&apos;s talk</div>
             <div className="lower-txt">Contact Us</div>
           </div>
         </div>
@@ -55,7 +55,7 @@ export default function AboutUs() {
       <main className="contact-page">
         <div className=" contact-first-cnt">
           <div className="contact-upper-cnt ">
-            <h1>CONTACT US</h1>
+            <h1 className="contact-heading">GET IN TOUCH</h1>
             <p>
               Whether you&apos;re a publisher, agency, development studio, Gabe
               Newell, or simply someone who fancies a smashing cup of tea, our
@@ -65,102 +65,114 @@ export default function AboutUs() {
           </div>
           <div className=" contact-lower-cnt">
             <div className="contact-cnt">
-              <div className="logo-cnt">
-                <FaEnvelope size={25} className="cn-icon" />
-              </div>
-              <div className="contact-info-cnt">
-                <h2>Email Us</h2>
-                <Link href="mailto:info@classygamesstudios.com">
-                  info@classygamesstudios.com
-                </Link>
-              </div>
+              <Link href="mailto:info@classygamesstudios.com" className="contact-link">
+                <div className="logo-cnt">
+                  <FaEnvelope size={25} className="cn-icon"/>
+                </div>
+                <div className="contact-info-cnt">
+                  <h2>General Enquiries:</h2>
+                  <div>info@classygamesstudios.com</div>
+                </div>
+              </Link>
             </div>
+
             <div className="contact-cnt">
-              <div className="logo-cnt">
-                <FaMapMarkerAlt size={25} className="cn-icon" />
-              </div>
-              <div className="contact-info-cnt">
-                <h2>Our Locations</h2>
-                <Link
-                  href="https://www.google.com/maps?q=Northern+Ireland+and+United+Arab+Emirates"
-                  target="_blank"
-                >
-                  Northern Ireland & UAE
-                </Link>
-              </div>
+              <Link href="mailto:jointhecrew@classygamesstudios.com" className="contact-link">
+                <div className="logo-cnt">
+                  <FaEnvelope size={25} className="cn-icon"/>
+                </div>
+                <div className="contact-info-cnt">
+                  <h2>Career Enquiries:</h2>
+                  <div>jointhecrew@classygamesstudios.com</div>
+                </div>
+              </Link>
             </div>
+            {/*<div className="contact-cnt">*/}
+            {/*  <div className="logo-cnt">*/}
+            {/*    <FaMapMarkerAlt size={25} className="cn-icon"/>*/}
+            {/*  </div>*/}
+            {/*  <div className="contact-info-cnt">*/}
+            {/*    <h2>Our Locations</h2>*/}
+            {/*    <Link*/}
+            {/*        href="https://www.google.com/maps?q=Northern+Ireland+and+United+Arab+Emirates"*/}
+            {/*        target="_blank"*/}
+            {/*    >*/}
+            {/*      Belfast, Northern Ireland<br></br> Riyadh, Saudi Arabia*/}
+            {/*    </Link>*/}
+            {/*  </div>*/}
+            {/*</div>*/}
           </div>
         </div>
-        <div className="contact-second-cnt ">
-          <form
-            action="https://formsubmit.co/info@classygamesstudios.com"
-            method="POST"
-            className="contact-form"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Contact Form Submission!"
-            />
-            <div className="form-row">
-              <div className="form-group">
-                <label htmlFor="firstName">First Name</label>
-                <input
-                  type="text"
-                  name="First Name"
-                  id="firstName"
-                  placeholder="ex. Mike"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="lastName">Last Name</label>
-                <input
-                  type="text"
-                  name="Last Name"
-                  id="lastName"
-                  placeholder="ex. Scott"
-                  required
-                />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="email">Email</label>
-              <input
-                type="email"
-                name="Email"
-                id="email"
-                placeholder="ex. email@example.com"
-                required
-              />
-            </div>
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                name="Message"
-                id="message"
-                placeholder="Example Text"
-                required
-              ></textarea>
-            </div>
-
-            <input
-              type="hidden"
-              name="_next"
-              value="https://classygamesstudios.com/contact"
-            />
-
-            <button type="submit" className="submit-btn">
-              Submit
-            </button>
-          </form>
-        </div>
+        {/*<div className="contact-second-cnt ">*/}
+        {/*  <form*/}
+        {/*    action="https://formsubmit.co/info@classygamesstudios.com"*/}
+        {/*    method="POST"*/}
+        {/*    className="contact-form"*/}
+        {/*  >*/}
+        {/*    <input*/}
+        {/*      type="hidden"*/}
+        {/*      name="_subject"*/}
+        {/*      value="New Contact Form Submission!"*/}
+        {/*    />*/}
+        {/*    <div className="form-row">*/}
+        {/*      <div className="form-group">*/}
+        {/*        <label htmlFor="firstName">First Name</label>*/}
+        {/*        <input*/}
+        {/*          type="text"*/}
+        {/*          name="First Name"*/}
+        {/*          id="firstName"*/}
+        {/*          placeholder="ex. Mike"*/}
+        {/*          required*/}
+        {/*        />*/}
+        {/*      </div>*/}
+        {/*      <div className="form-group">*/}
+        {/*        <label htmlFor="lastName">Last Name</label>*/}
+        {/*        <input*/}
+        {/*          type="text"*/}
+        {/*          name="Last Name"*/}
+        {/*          id="lastName"*/}
+        {/*          placeholder="ex. Scott"*/}
+        {/*          required*/}
+        {/*        />*/}
+        {/*      </div>*/}
+        {/*    </div>*/}
+        {/*    <div className="form-group">*/}
+        {/*      <label htmlFor="email">Email</label>*/}
+        {/*      <input*/}
+        {/*        type="email"*/}
+        {/*        name="Email"*/}
+        {/*        id="email"*/}
+        {/*        placeholder="ex. email@example.com"*/}
+        {/*        required*/}
+        {/*      />*/}
+        {/*    </div>*/}
+        {/*    <div className="form-group">*/}
+        {/*      <label htmlFor="message">Message</label>*/}
+        {/*      <textarea*/}
+        {/*        name="Message"*/}
+        {/*        id="message"*/}
+        {/*        placeholder="Example Text"*/}
+        {/*        required*/}
+        {/*      ></textarea>*/}
+        {/*    </div>*/}
+        
+        {/*    <input*/}
+        {/*      type="hidden"*/}
+        {/*      name="_next"*/}
+        {/*      value="https://classygamesstudios.com/contact"*/}
+        {/*    />*/}
+        
+        {/*    <button type="submit" className="submit-btn">*/}
+        {/*      Submit*/}
+        {/*    </button>*/}
+        {/*  </form>*/}
+        {/*</div>*/}
       </main>
 
       <main className="map-cnt">
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d151986.698977561!2d-5.864149942257194!3d54.671144565130604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1733502787462!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73968.42202860153!2d-6.009032787574015!3d54.59495147611762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860fffdd7d08a3b%3A0x2e57162cefc7c531!2sBelfast%2C%20UK!5e0!3m2!1sen!2ssa!4v1747250614782!5m2!1sen!2ssa"
             width="100%"
             height="400"
             allowFullScreen=""
@@ -171,7 +183,7 @@ export default function AboutUs() {
 
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86533.15445741397!2d55.266033788578866!3d25.21596606905573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1733502574639!5m2!1sen!2s"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.036147982!2d46.16304900873988!3d24.72499786895202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh!5e0!3m2!1sen!2ssa!4v1747250544019!5m2!1sen!2ssa"
             width="100%"
             height="400"
             allowFullScreen=""

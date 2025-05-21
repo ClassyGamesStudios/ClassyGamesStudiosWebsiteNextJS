@@ -79,7 +79,7 @@ export default function OrbitalPage() {
 
       <main className="ss-page">
         <Image
-          src="/assets/Logos/SSLogo.png"
+          src="/assets/Logos/OrbitalLogo.png"
           alt="Silly Suspects Logo"
           width={600}
           height={220}

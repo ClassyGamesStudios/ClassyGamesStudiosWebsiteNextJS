@@ -96,21 +96,22 @@ export default function SillySuspectsPage() {
 
       <main className="ss-page">
         <Image
-          src="/assets/Logos/SSLogo.png"
-          alt="Silly Suspects Logo"
-          width={600}
-          height={220}
-          className="ss-logo"
-          priority
+            src="/assets/Logos/SSLogo.png"
+            alt="Silly Suspects Logo"
+            width={600}
+            height={220}
+            className="ss-logo"
+            priority
         />
 
-        <h1>The perfect blend of mystery, comedy and chaos</h1>
+        <h1>The perfect blend of <br/>mystery, comedy & chaos</h1>
+
 
         <div className="video-container-ss">
           <iframe
-            src="https://www.youtube.com/embed/AimxxfwfE24?si=f2rmBc2qRQDRz-U1"
-            allowFullScreen
-            title="Silly Suspects Trailer"
+              src="https://www.youtube.com/embed/AimxxfwfE24?si=f2rmBc2qRQDRz-U1"
+              allowFullScreen
+              title="Silly Suspects Trailer"
           ></iframe>
         </div>
 
@@ -120,16 +121,16 @@ export default function SillySuspectsPage() {
           the toilet roll – chaos reigns supreme. In the midst of the mayhem,
           characters are &apos;exiting&apos; the world in hilarious ways,
           leaving behind bizarre crime scenes and confused witnesses.
-          <br />
-          <br />
+          <br/>
+          <br/>
           Classy Games Studios is proud to present,{" "}
           <strong>SillySuspects</strong> — a hilarious first-person detective
           RPG. Dive headfirst into a dynamically generated world teeming with
           quirky characters, each with their own lives, secrets and motives.
           Crack the case by analysing crime scenes, questioning suspects, and
           navigating through the unpredictable twists and turns of the world.
-          <br />
-          <br />
+          <br/>
+          <br/>
           With its perfect blend of humour, intrigue, and endless possibilities,
           SillySuspects promises to turn the traditional murder mystery genre on
           its head and keep you laughing.
@@ -139,36 +140,36 @@ export default function SillySuspectsPage() {
 
         <div className="downloads">
           <Link
-            href="https://store.steampowered.com/app/3073330/Silly_Suspects/"
-            target="_blank"
+              href="https://store.steampowered.com/app/3073330/Silly_Suspects/"
+              target="_blank"
           >
             <div className="steam">
               <Image
-                src="/assets/webImages/steam.webp"
-                alt="Download on Steam"
-                width={170}
-                height={100}
-                className="download-logo"
-                loading="lazy"
+                  src="/assets/webImages/steam.webp"
+                  alt="Download on Steam"
+                  width={170}
+                  height={100}
+                  className="download-logo"
+                  loading="lazy"
               />
             </div>
           </Link>
 
-          <Link
-            href="https://classygamesstudios.itch.io/sillysuspects"
-            target="_blank"
-          >
-            <div className="itch.io">
-              <Image
-                src="/assets/webImages/itch.webp"
-                alt="Download on Itch.io"
-                width={170}
-                height={100}
-                className="download-logo"
-                loading="lazy"
-              />
-            </div>
-          </Link>
+          {/*<Link*/}
+          {/*  href="https://classygamesstudios.itch.io/sillysuspects"*/}
+          {/*  target="_blank"*/}
+          {/*>*/}
+          {/*  <div className="itch.io">*/}
+          {/*    <Image*/}
+          {/*      src="/assets/webImages/itch.webp"*/}
+          {/*      alt="Download on Itch.io"*/}
+          {/*      width={170}*/}
+          {/*      height={100}*/}
+          {/*      className="download-logo"*/}
+          {/*      loading="lazy"*/}
+          {/*    />*/}
+          {/*  </div>*/}
+          {/*</Link>*/}
         </div>
 
         <div className="second-line"></div>

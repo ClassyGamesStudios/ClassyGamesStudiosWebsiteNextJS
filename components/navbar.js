@@ -112,21 +112,21 @@ export default function Navbar() {
                 onMouseOut={() => setMenuOpen(false)}
               >
                 <Link href="/games/sillysuspects">
-                  <Image
-                    src="/assets/Logos/SSLogo.png"
-                    alt="Logo"
-                    width={50}
-                    height={50}
-                  />{" "}
+                  {/*<Image*/}
+                  {/*  src="/assets/Logos/SSLogo.png"*/}
+                  {/*  alt="Logo"*/}
+                  {/*  width={50}*/}
+                  {/*  height={50}*/}
+                  {/*/>{" "}*/}
                   SillySuspects{" "}
                 </Link>
                 <Link href="/games/orbital">
-                  <Image
-                    src="/assets/webImages/Orbital Banner Image.webp"
-                    alt="Logo"
-                    width={50}
-                    height={50}
-                  />{" "}
+                  {/*<Image*/}
+                  {/*  src="/assets/webImages/Orbital Banner Image.webp"*/}
+                  {/*  alt="Logo"*/}
+                  {/*  width={50}*/}
+                  {/*  height={50}*/}
+                  {/*/>{" "}*/}
                   Orbital
                 </Link>
               </main>
