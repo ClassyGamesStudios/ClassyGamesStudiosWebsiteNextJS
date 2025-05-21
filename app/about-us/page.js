@@ -150,11 +150,11 @@ export default function AboutUs() {
             <br /><br />
             We believe great games go beyond fun. They spark curiosity, invite creativity, and leave lasting impressions.
             <br /><br />
-            We’re united by clear communication, creative freedom, and a deep respect for the player experience. We foster a culture of ownership where every team member is trusted to take initiative and contribute meaningfully. We value honesty and openness in how we work, ensuring that every voice is heard.
+            We&apos;re united by clear communication, creative freedom, and a deep respect for the player experience. We foster a culture of ownership where every team member is trusted to take initiative and contribute meaningfully. We value honesty and openness in how we work, ensuring that every voice is heard.
             <br /><br />
             Creative joy sits at the heart of everything we do. Whether we're designing a mechanic, writing dialogue, or play-testing a level, we approach it with a sense of play and craftsmanship. Our games are made to delight through polished design, unexpected moments, and a player-first mindset that treats players as co-creators in the experience.
             <br /><br />
-            Above all, we’re building a studio culture that is thoughtful, distinct, and deeply human. It's a culture that supports our team, empowers our ideas, and delivers games that are just as fun to make as they are to play.
+            Above all, we&apos;re building a studio culture that is thoughtful, distinct, and deeply human. It's a culture that supports our team, empowers our ideas, and delivers games that are just as fun to make as they are to play.
           </p>
         </div>
         <svg
@@ -267,7 +267,7 @@ export default function AboutUs() {
             OUR AWARDS
           </h1>
           <p className="under-paragraph">
-            We make games because we love them, and it's nice when others notice.
+            We make games because we love them, and it&apos;s nice when others notice.
             <br/><br/>
             These awards are a nod to the work our team puts in every day to build fun, imaginative experiences.
           </p>

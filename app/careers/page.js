@@ -93,10 +93,10 @@ export default function Careers() {
               we have a lot of fun doing it.
               <br/>
               <br/>
-              We’re a agile, focused team that values initiative, clear communication, and creative joy.
-              Whether you're animating a goofy character, refining a game loop, or sharing player feedback, your voice
+              We&apos;re a agile, focused team that values initiative, clear communication, and creative joy.
+              Whether you&apos;re animating a goofy character, refining a game loop, or sharing player feedback, your voice
               matters here.
-              We're building games with our players, not just for them, and that same spirit of collaboration runs
+              We&apos;re building games with our players, not just for them, and that same spirit of collaboration runs
               through our team.
               <br/>
               <br/>
