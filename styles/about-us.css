@@ -147,7 +147,6 @@
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-
 }
 
 .our-team {
@@ -267,7 +266,7 @@
   transition: all 0.2s ease;
 }
 
-.card-video video{
+.card-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -350,12 +349,17 @@
 .award-img {
   width: 200px;
   height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.award-img img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
-  transition: transform 0.3s ease; /* Add this line */
 }
 
 .award-img:hover {
-  transform: scale(0.95); /* Add this line */
+  transform: scale(0.95);
 }
 
 @media (max-width: 600px) {
@@ -364,8 +368,6 @@
     height: 80px;
   }
 }
-
-
 
 @media (max-width: 1030px) {
   .team-photo {

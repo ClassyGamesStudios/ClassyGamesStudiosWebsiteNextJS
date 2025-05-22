@@ -36,14 +36,14 @@ export default function Navbar() {
     <nav ref={navRef}>
       <div className="nav-bg"></div>
       <div className="logo">
-        <Link href='/'>
-        <Image
-          src="/Favicons/main-logo.png"
-          alt="Logo"
-          width={110}
-          height={110}
-          className="nav-logo"
-        />
+        <Link href="/">
+          <Image
+            src="/Favicons/main-logo.png"
+            alt="Logo"
+            width={110}
+            height={110}
+            className="nav-logo"
+          />
         </Link>
       </div>
       <button
@@ -109,9 +109,14 @@ export default function Navbar() {
             {menuOpen && (
               <main
                 className="dropdown-m"
-                onMouseOut={() => setMenuOpen(false)}
               >
-                <Link href="/games/sillysuspects">
+                <Link
+                  href="/games/sillysuspects"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setMenuOpen(false);
+                  }}
+                >
                   {/*<Image*/}
                   {/*  src="/assets/Logos/SSLogo.png"*/}
                   {/*  alt="Logo"*/}
@@ -120,7 +125,13 @@ export default function Navbar() {
                   {/*/>{" "}*/}
                   SillySuspects{" "}
                 </Link>
-                <Link href="/games/orbital">
+                <Link
+                  href="/games/orbital"
+                  onClick={() => {
+                    setMobileMenuOpen(false);
+                    setMenuOpen(false);
+                  }}
+                >
                   {/*<Image*/}
                   {/*  src="/assets/webImages/Orbital Banner Image.webp"*/}
                   {/*  alt="Logo"*/}

@@ -76,8 +76,8 @@ export default function Home() {
     <div className="body">
       <main className="upper-body">
         <div className="home-banner-text">
-          Creating engaging games that <br/>
-          ignite your imagination and <br/>
+          Creating engaging games that <br />
+          ignite your imagination and <br />
           bring out your inner child.
         </div>
         <div className="home-banner">
@@ -178,40 +178,42 @@ export default function Home() {
       <main className="lower-body">
         {/*<div className="hook">WHAT WE ARE CURRENTLY COOKING UP</div>*/}
         <Link
-            href="https://store.steampowered.com/app/3073330/SillySuspects"
-            target="_blank"
-            rel="noopener noreferrer"
+          href="https://store.steampowered.com/app/3073330/SillySuspects"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="logoContainer"
         >
           <Image
-              src="/assets/Logos/SSLogo.png"
-              alt="Logo"
-              width={600}
-              height={200}
-              objectFit="contain"
-              className="hook-logo"
+            src="/assets/Logos/SSLogo.png"
+            alt="Logo"
+            width={600}
+            height={200}
+            objectFit="contain"
+            className="hook-logo"
           />
         </Link>
 
         <p className="hook-text">
           The perfect blend of mystery, comedy & chaos
-          <br/>
-          <br/>
-          SillySuspects is an outrageously hilarious first-person detective game with a comedic twist on the murder
-          mystery genre.
-          <br/>
-          With its blend of humour, intrigue, and endless possibilities, SillySuspects promises an experience like no
-          other.
-          <br/>
-          <br/>
-          As the detective, you’ll dive head first into a dynamically generated world teeming with quirky characters,
-          each with their own lives, secrets and motives.
-          <br/>
-          <br/>
-          Your mission? Uncover the identity of the crafty criminal by exploring vibrant cities, analysing bizarre crime
-          scenes,
-          and investigating quirky characters to unravel a wild and wacky mystery.
-          <br/>
-          <br/>
+          <br />
+          <br />
+          SillySuspects is an outrageously hilarious first-person detective game
+          with a comedic twist on the murder mystery genre.
+          <br />
+          With its blend of humour, intrigue, and endless possibilities,
+          SillySuspects promises an experience like no other.
+          <br />
+          <br />
+          As the detective, you’ll dive head first into a dynamically generated
+          world teeming with quirky characters, each with their own lives,
+          secrets and motives.
+          <br />
+          <br />
+          Your mission? Uncover the identity of the crafty criminal by exploring
+          vibrant cities, analysing bizarre crime scenes, and investigating
+          quirky characters to unravel a wild and wacky mystery.
+          <br />
+          <br />
           Are you ready to bring justice to this hilariously chaotic world?
         </p>
         <main className="characters-area"></main>
@@ -220,14 +222,17 @@ export default function Home() {
       <main className="about-us-body">
         <div className="about-us-cnt">
           <div className="about-us-hook">
-            All About<br />
+            All About
+            <br />
             Classy Games
           </div>
           <div className="info-container">
             <p className="about-us-paragraph">
-              We&apos;re a remote team of developers, artists, and designers united by a shared love for imaginative, player-first experiences. 
-              With a focus on thoughtful design, clear collaboration, and creative integrity, 
-              we&apos;re building games that stand out and a studio culture we&apos;re proud of.
+              We&apos;re a remote team of developers, artists, and designers
+              united by a shared love for imaginative, player-first experiences.
+              With a focus on thoughtful design, clear collaboration, and
+              creative integrity, we&apos;re building games that stand out and a
+              studio culture we&apos;re proud of.
             </p>
             <Link href="/about-us" className="btn-container">
               <div className="about-us-button">
