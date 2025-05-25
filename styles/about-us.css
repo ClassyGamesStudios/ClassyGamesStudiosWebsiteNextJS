@@ -395,6 +395,11 @@
     padding-bottom: 1rem;
     font-size: 32px;
   }
+  .under-title{
+    font-size: 32px;
+    white-space: nowrap;
+
+  }
 }
 @media (max-width: 500px) {
   .photo-page h1 {
