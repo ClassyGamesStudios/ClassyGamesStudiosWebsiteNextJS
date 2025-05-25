@@ -134,11 +134,11 @@
   height: 100%;
 
   background: linear-gradient(
-          to bottom,
-          rgba(30, 30, 30, 0.4),
-          rgba(0, 0, 0, 0)
-  ),
-  url("/images/Banner.png");
+      to bottom,
+      rgba(30, 30, 30, 0.4),
+      rgba(0, 0, 0, 0)
+    ),
+    url("/images/Banner.png");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -258,7 +258,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
+  text-align: center;
+  justify-content: center;
   width: 100vw;
   position: relative;
   padding: 8rem 1rem;
@@ -272,7 +273,6 @@
   font-size: 16px;
   font-weight: 400;
   text-align: center;
-
 }
 
 .our-team {
@@ -392,7 +392,7 @@
   transition: all 0.2s ease;
 }
 
-.card-video video{
+.card-video video {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -485,7 +485,6 @@
   }
 }
 
-
 @media (max-width: 1030px) {
   .team-photo {
     width: 100%;
@@ -510,7 +509,7 @@
   }
   .our-team {
     padding-bottom: 1rem;
-    font-size: 32px;
+    font-size: 18px;
   }
 }
 @media (max-width: 500px) {

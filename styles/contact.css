@@ -246,4 +246,7 @@
   .form-row {
     flex-direction: column;
   }
+  .contact-heading{
+    font-size: 18px;
+  }
 }
