@@ -107,9 +107,7 @@ export default function Navbar() {
             )}
 
             {menuOpen && (
-              <main
-                className="dropdown-m"
-              >
+              <main className="dropdown-m">
                 <Link
                   href="/games/sillysuspects"
                   onClick={() => {

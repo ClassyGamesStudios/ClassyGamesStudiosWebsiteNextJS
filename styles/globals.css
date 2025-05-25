@@ -54,8 +54,22 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
+
+html {
+  overflow: hidden;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
 .body {
   font-family: Ubuntu, Helvetica, sans-serif;
 }
