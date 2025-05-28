@@ -28,7 +28,7 @@
     ),
     url("/assets/Banners/orbitalBanner.png");
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: local;
   background-repeat: no-repeat;
   background-position: top;
   z-index: -1;
@@ -220,6 +220,9 @@
   .second-line,
   .video-container-ss {
     width: 100%;
+  }
+  .ss-banner {
+    background-attachment: local;
   }
 }
 @media (max-width: 768px) {
