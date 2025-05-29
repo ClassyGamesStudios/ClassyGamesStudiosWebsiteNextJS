@@ -53,7 +53,7 @@ export default function Footer() {
                             />
                         </Link>
                         <Link
-                            href="https://discord.com/invite/RnFAM8xV"
+                            href="https://discord.com/invite/QTHShZJtGv"
                             target="_blank"
                             title="Discord"
                         >

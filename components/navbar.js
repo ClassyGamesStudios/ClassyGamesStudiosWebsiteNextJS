@@ -12,7 +12,7 @@ export default function Navbar() {
   const links = [
     "https://www.linkedin.com/company/classy-games-studios",
     "https://store.steampowered.com/developer/classygamesstudios",
-    "https://discord.com/invite/RnFAM8xV",
+    "https://discord.com/invite/QTHShZJtGv",
     "https://www.reddit.com/r/classygamesstudios/",
     "https://www.tiktok.com/@classygamesstudios",
     "https://bsky.app/profile/classygamesstudios.com",
