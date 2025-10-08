@@ -10,14 +10,14 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navRef = useRef(null);
   const links = [
-    "https://www.linkedin.com/company/classy-games-studios",
-    "https://store.steampowered.com/developer/classygamesstudios",
+    "https://www.linkedin.com/company/classy-games-gg",
+    "https://store.steampowered.com/developer/classygames",
     "https://discord.com/invite/QTHShZJtGv",
-    "https://www.reddit.com/r/classygamesstudios/",
-    "https://www.tiktok.com/@classygamesstudios",
-    "https://bsky.app/profile/classygamesstudios.com",
-    "https://www.youtube.com/@ClassyGamesStudios",
-    "https://www.instagram.com/classy_games_studios/",
+    "https://www.reddit.com/r/classygames",
+    "https://www.tiktok.com/@classygames.gg",
+    "https://bsky.app/profile/classygames.gg",
+    "https://www.youtube.com/@ClassyGamesGG",
+    "https://www.instagram.com/classygames.gg/",
   ];
   useEffect(() => {
     const handleClickOutside = (event) => {
