@@ -64,29 +64,29 @@ export default function AboutUs() {
             </p>
           </div>
           <div className=" contact-lower-cnt">
-            <div className="contact-cnt">
-              <Link href="mailto:info@classygamesstudios.com" className="contact-link">
-                <div className="logo-cnt">
-                  <FaEnvelope size={25} className="cn-icon"/>
-                </div>
-                <div className="contact-info-cnt">
-                  <h2>General Enquiries:</h2>
-                  <div>info@classygamesstudios.com</div>
-                </div>
-              </Link>
-            </div>
-
-            <div className="contact-cnt">
-              <Link href="mailto:jointhecrew@classygamesstudios.com" className="contact-link">
-                <div className="logo-cnt">
-                  <FaEnvelope size={25} className="cn-icon"/>
-                </div>
-                <div className="contact-info-cnt">
-                  <h2>Career Enquiries:</h2>
-                  <div>jointhecrew@classygamesstudios.com</div>
-                </div>
-              </Link>
-            </div>
+            {/*<div className="contact-cnt">*/}
+            {/*  <Link href="mailto:info@classygamesstudios.com" className="contact-link">*/}
+            {/*    <div className="logo-cnt">*/}
+            {/*      <FaEnvelope size={25} className="cn-icon"/>*/}
+            {/*    </div>*/}
+            {/*    <div className="contact-info-cnt">*/}
+            {/*      <h2>General Enquiries:</h2>*/}
+            {/*      <div>info@classygamesstudios.com</div>*/}
+            {/*    </div>*/}
+            {/*  </Link>*/}
+            {/*</div>*/}
+            
+            {/*<div className="contact-cnt">*/}
+            {/*  <Link href="mailto:jointhecrew@classygamesstudios.com" className="contact-link">*/}
+            {/*    <div className="logo-cnt">*/}
+            {/*      <FaEnvelope size={25} className="cn-icon"/>*/}
+            {/*    </div>*/}
+            {/*    <div className="contact-info-cnt">*/}
+            {/*      <h2>Career Enquiries:</h2>*/}
+            {/*      <div>jointhecrew@classygamesstudios.com</div>*/}
+            {/*    </div>*/}
+            {/*  </Link>*/}
+            {/*</div>*/}
             {/*<div className="contact-cnt">*/}
             {/*  <div className="logo-cnt">*/}
             {/*    <FaMapMarkerAlt size={25} className="cn-icon"/>*/}
@@ -172,23 +172,34 @@ export default function AboutUs() {
       <main className="map-cnt">
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73968.42202860153!2d-6.009032787574015!3d54.59495147611762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860fffdd7d08a3b%3A0x2e57162cefc7c531!2sBelfast%2C%20UK!5e0!3m2!1sen!2ssa!4v1747250614782!5m2!1sen!2ssa"
-            width="100%"
-            height="400"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73968.42202860153!2d-6.009032787574015!3d54.59495147611762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4860fffdd7d08a3b%3A0x2e57162cefc7c531!2sBelfast%2C%20UK!5e0!3m2!1sen!2ssa!4v1747250614782!5m2!1sen!2ssa"
+              width="100%"
+              height="400"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.036147982!2d46.16304900873988!3d24.72499786895202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh!5e0!3m2!1sen!2ssa!4v1747250544019!5m2!1sen!2ssa"
-            width="100%"
-            height="400"
-            allowFullScreen=""
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d927758.036147982!2d46.16304900873988!3d24.72499786895202!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh!5e0!3m2!1sen!2ssa!4v1747250544019!5m2!1sen!2ssa"
+              width="100%"
+              height="400"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div className="map">
+          <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.68281887844!2d54.89782418606137!3d25.076280448702796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2seg!4v1761512436372!5m2!1sen!2seg"
+              width="100%"
+              height="400"
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </main>

@@ -58,13 +58,13 @@ export default function AboutUs() {
       photo: "/assets/TeamPhotos/teamMemberPhoto1.webp",
       video: "/assets/TeamVideos/teamMemberVideo1.mp4",
     },
-    {
-      name: "Mayara Bastos",
-      position: "Marketing & Community ",
-      linkedin: "https://www.linkedin.com/in/mayara-bastos/",
-      photo: "/assets/TeamPhotos/teamMemberPhoto2.webp",
-      video: "/assets/TeamVideos/teamMemberVideo2.mp4",
-    },
+    // {
+    //   name: "Mayara Bastos",
+    //   position: "Marketing & Community ",
+    //   linkedin: "https://www.linkedin.com/in/mayara-bastos/",
+    //   photo: "/assets/TeamPhotos/teamMemberPhoto2.webp",
+    //   video: "/assets/TeamVideos/teamMemberVideo2.mp4",
+    // },
     {
       name: "Moazer Ibrahim",
       position: "3D Artist",
@@ -81,7 +81,7 @@ export default function AboutUs() {
     },
     {
       name: "Dana Taha",
-      position: "Game Developer Intern ",
+      position: "Junior Game Developer",
       linkedin: "https://www.linkedin.com/in/dana-taha-5a577b24b/",
       photo: "/assets/TeamPhotos/teamMemberPhoto5.webp",
       video: "/assets/TeamVideos/teamMemberVideo5.mp4",
@@ -276,7 +276,7 @@ export default function AboutUs() {
                     >
                       <div className="icon">
                         <Image
-                          src="/assets/SocialIcons/icon1.png"
+                          src="/assets/SocialIcons/linkedin.png"
                           alt="LinkedIn"
                           width={25}
                           height={25}
@@ -311,7 +311,7 @@ export default function AboutUs() {
                     >
                       <div className="icon">
                         <Image
-                          src="/assets/SocialIcons/icon1.png"
+                          src="/assets/SocialIcons/linkedin.png"
                           alt="LinkedIn"
                           width={25}
                           height={25}

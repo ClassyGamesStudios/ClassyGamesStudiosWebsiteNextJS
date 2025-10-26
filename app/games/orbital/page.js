@@ -87,7 +87,7 @@ export default function OrbitalPage() {
           priority
         />
 
-        <h1>Become the ultimate planetary pilot</h1>
+        <h1>No Escape. No Salvation. Only Time.</h1>
 
         <div className="video-container-ss">
           <iframe
