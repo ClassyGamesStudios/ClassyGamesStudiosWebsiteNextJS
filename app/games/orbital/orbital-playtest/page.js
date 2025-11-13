@@ -50,15 +50,15 @@ export default function OrbitalPlaytest() {
   const faqs = [
     {
       question: "When does the playtest begin?",
-      answer: "The Orbital playtest begins February 2025. Exact dates will be communicated to registered participants via email."
+      answer: "We will be running playtests on a monthly basis until game launch. Register for our playtests via our form to receive specific dates"
     },
     {
       question: "What platforms will the playtest be available on?",
-      answer: "The playtest will be available on PC (Windows) initially, with potential mobile testing phases to follow."
+      answer: "The playtest will be available on PC/Steam (Windows) initially, with potential mobile testing phases if enough players request it.."
     },
     {
       question: "How long will the playtest last?",
-      answer: "The initial playtest phase will run for 2-3 weeks, with potential extensions based on feedback and testing needs."
+      answer: "Playtests generally run 3-5 days."
     },
     {
       question: "Will my progress carry over to the full game?",
@@ -105,8 +105,13 @@ export default function OrbitalPlaytest() {
               loading="lazy"
             ></iframe>
           </div>
-          <Link href="#register" className="cta-button primary">
-            <span>Join Playtest</span>
+          <Link 
+            href="https://ojpazyzsqmrw.jp.larksuite.com/base/K86fb1n5Datm9xsOHXbjqGYZpGc?table=tblFaaiouIXvKSXN&view=vewElJ5MHM" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cta-button primary"
+          >
+            <span>Register for Playtest</span>
             <FaGamepad />
           </Link>
         </div>
@@ -125,9 +130,9 @@ export default function OrbitalPlaytest() {
         <div className="section-container">
           <h2 className="section-title">Game Overview</h2>
           <p className="overview-description">
-            Step into the role of planetary pilot in this groundbreaking survival game where time is your only enemy. 
-            Navigate your planet through the cosmos, avoiding celestial hazards while the inevitable pull of a black hole 
-            grows stronger. How long can you keep your world alive?
+            You are a Planetary Pilot, humanity's elite. Tasked with prolonging the inevitable grasp of a supermassive blackhole. 
+            Dodge asteroids, navigate wormholes, and avoid shooting stars while utilising specialized planetary technologies alongside other Galactic Defenders. 
+            Obtain Quanta to unlock new planets. Ascend amid global leaderboards. Success or Achievement or Glory is measured in seconds, not survival.
           </p>
           <div className="overview-grid">
             <div className="game-overview-item">
@@ -137,8 +142,8 @@ export default function OrbitalPlaytest() {
             </div>
             <div className="game-overview-item">
               <div className="overview-icon">⚡</div>
-              <h3>Intense Survival Gameplay</h3>
-              <p>Face escalating challenges as asteroids, supernovas, and wormholes threaten your planet</p>
+              <h3>Perfectly Paced Peril</h3>
+              <p>Perfectly paced cosmic threats keep you engaged. Asteroids, supernovas, and wormholes escalate at just the right tempo.</p>
             </div>
             <div className="game-overview-item">
               <div className="overview-icon">🏆</div>
@@ -193,7 +198,7 @@ export default function OrbitalPlaytest() {
               </div>
               <div className="step-number">01</div>
               <h3>Register</h3>
-              <p>Sign up with your email to secure your spot in the exclusive playtest</p>
+              <p>Sign up with using our form to secure your spot in the exclusive playtest</p>
             </div>
             <div className="process-connector"></div>
             <div className="process-step">
@@ -202,7 +207,7 @@ export default function OrbitalPlaytest() {
               </div>
               <div className="step-number">02</div>
               <h3>Contact</h3>
-              <p>Receive your invite and instructions via email when the playtest begins</p>
+              <p>Receive your invite and instructions</p>
             </div>
             <div className="process-connector"></div>
             <div className="process-step">
@@ -244,11 +249,16 @@ export default function OrbitalPlaytest() {
             <div className="benefit-box">
               <div className="benefit-icon">🎁</div>
               <h3>Exclusive Rewards</h3>
-              <p>Unlock special cosmetics, titles, and bonuses only available to playtesters</p>
+              <p>Unlock special rewards, titles, and bonuses only available to playtesters</p>
             </div>
           </div>
           <div className="cta-container">
-            <Link href="#register" className="cta-button benefits-card-style">
+            <Link 
+              href="https://ojpazyzsqmrw.jp.larksuite.com/base/K86fb1n5Datm9xsOHXbjqGYZpGc?table=tblFaaiouIXvKSXN&view=vewElJ5MHM" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="cta-button benefits-card-style"
+            >
               <span>Register for Playtest</span>
               <FaGamepad />
             </Link>
