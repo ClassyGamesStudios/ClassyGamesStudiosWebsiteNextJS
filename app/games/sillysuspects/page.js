@@ -142,7 +142,7 @@ export default function SillySuspectsPage() {
             <p className="overview-description">
               In a world overrun by the most ridiculous criminals imaginable – those who put pineapple
               on pizza, wear sunglasses inside, and never replace the toilet roll – chaos reigns supreme.
-              In the midst of the mayhem, characters are 'exiting' the world in hilarious ways, leaving
+              In the midst of the mayhem, characters are exiting the world in hilarious ways, leaving
               behind bizarre crime scenes and confused witnesses.
             </p>
             <div className="overview-grid">
