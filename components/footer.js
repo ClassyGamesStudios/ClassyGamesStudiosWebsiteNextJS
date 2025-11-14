@@ -26,7 +26,7 @@ export default function Footer() {
                 <div className="first">
                     <Link href="/">
                         <Image
-                            src="assets/Logos/ClassyGamesLogo.webp"
+                            src="/assets/Logos/ClassyGamesLogo.webp"
                             alt="Logo"
                             width={125}
                             height={125}

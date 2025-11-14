@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+.sillysuspects-page {
+  width: 100vw;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-section {
+  position: relative;
+  width: 100vw;
+  min-height: 130vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--classyBlack);
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/Heroes/SillySuspectsHero.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+          to bottom,
+          rgba(25, 25, 25, 0.7),
+          rgba(25, 25, 25, 0.9)
+  );
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin-bottom: 1rem;
+}
+
+.sillysuspects-hero-logo {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.5));
+}
+
+.hero-tagline {
+  font-size: 44px;
+  color: white;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.hero-tagline::before,
+.hero-tagline::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--classyBlue);
+  border-radius: 2px;
+}
+
+.coming-soon {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--classyBlue);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  animation: pulse 2s infinite;
+  margin: 0;
+  line-height: 1.1;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+.trailer-container {
+  width: 100%;
+  max-width: 1100px;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 3px solid var(--classyBlue);
+  box-shadow: 0 20px 60px rgba(129, 186, 223, 0.3);
+  margin-bottom: 3rem
+}
+
+.trailer-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.2rem 2.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button.primary {
+  background-color: var(--classyBlue);
+  color: white;
+  border: 2px solid var(--classyBlue);
+}
+
+.cta-button.primary:hover {
+  background-color: white;
+  color: var(--classyBlue);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(129, 186, 223, 0.4);
+}
+
+.cta-button.secondary {
+  background-color: white;
+  color: var(--classyBlack);
+  border: 2px solid white;
+}
+
+.cta-button.secondary:hover {
+  background-color: var(--classyBlue);
+  color: white;
+  border-color: var(--classyBlue);
+  transform: scale(1.05);
+}
+
+.cta-button.tertiary {
+  background-color: transparent;
+  color: var(--classyBlue);
+  border: 2px solid var(--classyBlue);
+}
+
+.cta-button.tertiary:hover {
+  background-color: var(--classyBlue);
+  color: white;
+}
+
+/* Wave at bottom of Hero - White (transitions to Steam Widget white background) */
+.hero-wave {
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 10vh;
+  fill: white;
+  z-index: 4;
+}
+
+/* Section Base Styles */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--classyBlue);
+  border-radius: 2px;
+}
+
+/* Steam Widget Hero Section - White Background */
+.steam-widget-hero {
+  position: relative;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 10px 20px;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.steam-widget-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.steam-widget-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(129, 186, 223, 0.05) 0%, transparent 70%);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.steam-widget-content {
+  position: relative;
+  z-index: 3;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.2);
+}
+
+.steam-widget-placeholder {
+  background: rgba(23, 26, 33, 0.95);
+  border: 2px solid rgba(26, 188, 156, 0.3);
+  border-radius: 12px;
+  padding: 60px 40px;
+  max-width: 646px;
+  margin: 0 auto;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.placeholder-icon {
+  font-size: 64px;
+  color: #1abc9c;
+  opacity: 0.9;
+}
+
+.steam-widget-placeholder h3 {
+  font-size: 32px;
+  color: #fff;
+  margin: 0;
+  font-weight: 700;
+}
+
+.steam-widget-placeholder p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Wave at bottom of Steam Widget - Classy Black (transitions to Game Overview black background) */
+.steam-widget-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  fill: var(--classyBlack);
+  z-index: 2;
+}
+
+/* Game Overview Section - Classy Black Background */
+.game-overview-section {
+  position: relative;
+  padding: 2rem 0;
+  background-color: var(--classyBlack);
+  margin-bottom: 0;
+}
+
+.game-overview-section .section-title {
+  color: white;
+}
+
+.overview-description {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  color: white;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  font-weight: 300;
+}
+
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.game-overview-item {
+  text-align: center;
+  padding: 2.75rem 2.25rem;
+  background-color: var(--classyBlue);
+  border-radius: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 15px 35px rgba(129, 186, 223, 0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+}
+
+.game-overview-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(129, 186, 223, 0.35);
+}
+
+.overview-icon {
+  font-size: 48px;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.game-overview-item h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  color: var(--classyBlue);
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 6px 18px rgba(255, 255, 255, 0.35);
+}
+
+.game-overview-item p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* Wave at bottom of Game Overview - White (transitions to Screenshots white background) */
+.game-overview-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  fill: white;
+  z-index: 2;
+}
+
+/* Screenshots Section */
+.screenshots-section {
+  position: relative;
+  padding: 4rem 0;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.screenshots-gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.screenshot-display {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 6px solid var(--classyBlue);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.screenshot-featured {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.screenshot-carousel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  justify-items: center;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.screenshot-thumb {
+  border: none;
+  padding: 0;
+  background: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 3px solid var(--classyBlue);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+  cursor: pointer;
+}
+
+.screenshot-thumb:hover {
+  transform: translateY(-4px);
+  border-color: rgba(129, 186, 223, 0.6);
+}
+
+.screenshot-thumb.active {
+  border-color: var(--classyBlue);
+  transform: translateY(-4px);
+}
+
+.screenshot-thumb-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.screenshots-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  fill: var(--classyBlack);
+  z-index: 2;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 1rem;
+    gap: 1.25rem;
+  }
+
+  .hero-tagline {
+    font-size: 32px;
+    gap: 0.75rem;
+    line-height: 1.2;
+  }
+
+  .hero-section {
+    padding-top: 3.5rem;
+    padding-bottom: 2.5rem;
+    min-height: 100vh;
+  }
+
+  .coming-soon {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    width: 30px;
+  }
+
+  .overview-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .screenshots-gallery {
+    gap: 1rem;
+  }
+
+  .screenshot-display {
+    max-width: 100%;
+  }
+
+  .screenshot-carousel {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .screenshot-thumb-image {
+    width: 130px;
+  }
+
+  .sillysuspects-hero-logo {
+    max-width: 350px;
+  }
+
+  .trailer-container {
+    max-width: 100%;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 1rem 2rem;
+  }
+
+  .steam-widget-hero {
+    min-height: 350px;
+    padding: 60px 20px;
+  }
+
+  .steam-widget-placeholder {
+    padding: 40px 30px;
+  }
+
+  .placeholder-icon {
+    font-size: 48px;
+  }
+
+  .steam-widget-placeholder h3 {
+    font-size: 24px;
+  }
+
+  .steam-widget-placeholder p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .coming-soon {
+    font-size: 18px;
+  }
+
+  .screenshot-thumb-image {
+    width: 100px;
+  }
+}

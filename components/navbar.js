@@ -55,7 +55,7 @@ export default function Navbar() {
         <div className="logo">
           <Link href="/">
             <Image
-                src="assets/Logos/ClassyGamesLogoTransparent.webp"
+                src="/assets/Logos/ClassyGamesLogoTransparent.webp"
                 alt="Logo"
                 width={110}
                 height={110}

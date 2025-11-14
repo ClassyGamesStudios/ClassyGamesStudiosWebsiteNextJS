@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+.orbital-playtest-page {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+/* Promo Image Section - Classy Black */
+.promo-section {
+  position: relative;
+  padding: 6rem 0;
+  background-color: var(--classyBlack);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.promo-display {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 6px solid var(--classyBlue);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+}
+
+.promo-featured {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promo-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  fill: white;
+  z-index: 2;
+}
+
+/* Section Base Styles */
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+.section-title::before,
+.section-title::after {
+  content: "";
+  width: 50px;
+  height: 3px;
+  background-color: var(--classyBlue);
+  border-radius: 2px;
+}
+
+/* CTA Button Styles */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1.2rem 2.5rem;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.cta-button.tertiary {
+  background-color: transparent;
+  color: var(--classyBlue);
+  border: 2px solid var(--classyBlue);
+}
+
+.cta-button.tertiary:hover {
+  background-color: var(--classyBlue);
+  color: white;
+}
+
+.cta-button.benefits-card-style {
+  background-color: var(--classyBlue);
+  color: white;
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0 15px 35px rgba(129, 186, 223, 0.25);
+  padding: 2.25rem 3.5rem;
+  font-size: 20px;
+  letter-spacing: 0.05em;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.cta-button.benefits-card-style:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(129, 186, 223, 0.35);
+  background-color: #6aa8d8;
+}
+
+/* How It Works Section - White */
+.how-it-works-section {
+  position: relative;
+  padding: 4rem 0;
+  background-color: white;
+  color: var(--classyBlack);
+}
+
+.how-it-works-section .section-title {
+  color: var(--classyBlack);
+}
+
+.process-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.process-step {
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  position: relative;
+  padding: 2rem 1rem;
+}
+
+.step-number {
+  font-size: 60px;
+  font-weight: 800;
+  opacity: 0.2;
+  color: var(--classyBlue);
+  margin-bottom: 1rem;
+  line-height: 1;
+}
+
+.step-icon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem;
+  background-color: var(--classyBlue);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: white;
+}
+
+.process-step h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--classyBlue);
+}
+
+.process-step p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Wave at bottom of How It Works - Classy Black */
+.how-it-works-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  fill: var(--classyBlack);
+  z-index: 2;
+}
+
+/* Benefits Section - Classy Black */
+.benefits-section {
+  position: relative;
+  padding: 4rem 0;
+  background-color: var(--classyBlack);
+}
+
+.benefits-section .section-title {
+  color: white;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.benefit-box {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.benefit-box:hover {
+  transform: translateY(-10px);
+  border-color: var(--classyBlue);
+  box-shadow: 0 15px 40px rgba(129, 186, 223, 0.2);
+}
+
+.benefit-icon {
+  font-size: 48px;
+  margin-bottom: 1.5rem;
+}
+
+.benefit-box h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--classyBlack);
+  margin-bottom: 1rem;
+}
+
+.benefit-box p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.cta-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+/* Wave at bottom of Benefits - White */
+.benefits-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  fill: white;
+  z-index: 2;
+}
+
+/* FAQ Section - White */
+.faq-section {
+  position: relative;
+  padding: 4rem 0;
+  background-color: white;
+  color: var(--classyBlack);
+}
+
+.faq-section .section-title {
+  color: var(--classyBlack);
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 5px 15px rgba(129, 186, 223, 0.2);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--classyBlack);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.faq-question:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.faq-question.active {
+  background-color: var(--classyBlue);
+  color: white;
+}
+
+.faq-icon {
+  font-size: 24px;
+  font-weight: 300;
+  transition: transform 0.3s ease;
+}
+
+.faq-question.active .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.faq-answer.active {
+  max-height: 300px;
+}
+
+.faq-answer p {
+  padding: 1.5rem;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.faq-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  fill: var(--classyBlack);
+  z-index: 2;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .process-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 32px;
+  }
+
+  .section-title::before,
+  .section-title::after {
+    width: 30px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-button {
+    font-size: 16px;
+    padding: 1rem 2rem;
+  }
+
+  .promo-display {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .benefit-box {
+    padding: 1.5rem;
+  }
+
+  .process-step {
+    padding: 1rem;
+  }
+
+  .step-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .step-number {
+    font-size: 40px;
+  }
+}
