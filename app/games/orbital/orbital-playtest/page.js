@@ -50,15 +50,15 @@ export default function OrbitalPlaytest() {
   const faqs = [
     {
       question: "When does the playtest begin?",
-      answer: "We will be running playtests on a monthly basis until game launch. Register for our playtests via our form to receive specific dates"
+      answer: "The Orbital playtest begins November 2025. Exact dates will be communicated to registered participants via email."
     },
     {
       question: "What platforms will the playtest be available on?",
-      answer: "The playtest will be available on PC/Steam (Windows) initially, with potential mobile testing phases if enough players request it.."
+      answer: "The playtest will be available on PC (Windows) initially, with potential mobile testing phases to follow."
     },
     {
       question: "How long will the playtest last?",
-      answer: "Playtests generally run 3-5 days."
+      answer: "The initial playtest phase will run for approximately 1 week, with monthly playtests to follow."
     },
     {
       question: "Will my progress carry over to the full game?",
@@ -71,39 +71,31 @@ export default function OrbitalPlaytest() {
   ];
 
   const screenshots = [
-    { src: "/images/Orbital/upper1.webp", alt: "Orbital Screenshot 1" },
-    { src: "/images/Orbital/upper2.webp", alt: "Orbital Screenshot 2" },
-    { src: "/images/Orbital/upper3.webp", alt: "Orbital Screenshot 3" },
-    { src: "/images/Orbital/upper4.webp", alt: "Orbital Screenshot 4" },
-    { src: "/images/Orbital/upper5.webp", alt: "Orbital Screenshot 5" },
-    { src: "/images/Orbital/lower1.webp", alt: "Orbital Screenshot 6" },
+    { src: "/assets/GameScreenshots/Orbital/Earth_Menu.png", alt: "Orbital Earth menu" },
+    { src: "/assets/GameScreenshots/Orbital/Earth_GameVerThree.png", alt: "Orbital Earth gameplay" },
+    { src: "/assets/GameScreenshots/Orbital/Leaderboard_VerTwo.png", alt: "Orbital leaderboard view" },
+    { src: "/assets/GameScreenshots/Orbital/Luna_GameVerFour.png", alt: "Orbital Luna gameplay" },
+    { src: "/assets/GameScreenshots/Orbital/Store_VerOne.png", alt: "Orbital in-game store" },
+    { src: "/assets/GameScreenshots/Orbital/Venus_Menu.png", alt: "Orbital Venus menu" },
   ];
 
   return (
     <div className="orbital-playtest-page">
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-bg">
-          <div className="hero-overlay"></div>
-        </div>
         <div className="hero-content">
-          <Image
-            src="/assets/Logos/Orbital_Logo.png"
-            alt="Orbital Logo"
-            width={750}
-            height={270}
-            className="orbital-hero-logo"
-            priority
-          />
-          <h1 className="hero-tagline">No Escape. No Salvation. Only Time.</h1>
-          <p className="coming-soon">JOIN THE NEXT PLAYTEST</p>
           <div className="trailer-container">
-            <iframe
-              src="https://www.youtube.com/embed/xHljIZBbMU0?si=wJ7VtyfWzVxXzq0x"
-              allowFullScreen
-              title="Orbital Gameplay Trailer"
-              loading="lazy"
-            ></iframe>
+            <video
+              className="promo-featured"
+              autoPlay
+              playsInline
+              muted
+              loop
+              poster="/assets/Heroes/OrbitalPromo.png"
+            >
+              <source src="/assets/Videos/orbital_video_placeholder.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
           <Link 
             href="https://ojpazyzsqmrw.jp.larksuite.com/base/K86fb1n5Datm9xsOHXbjqGYZpGc?table=tblFaaiouIXvKSXN&view=vewElJ5MHM" 
@@ -111,7 +103,7 @@ export default function OrbitalPlaytest() {
             rel="noopener noreferrer"
             className="cta-button primary"
           >
-            <span>Register for Playtest</span>
+            <span>Join the Playtest</span>
             <FaGamepad />
           </Link>
         </div>
@@ -137,17 +129,17 @@ export default function OrbitalPlaytest() {
           <div className="overview-grid">
             <div className="game-overview-item">
               <div className="overview-icon">🌍</div>
-              <h3>Dynamic Planetary Control</h3>
+              <h3>Dynamic Planetary Technologies</h3>
               <p>Master unique planetary technologies to navigate through space-time anomalies</p>
             </div>
             <div className="game-overview-item">
               <div className="overview-icon">⚡</div>
-              <h3>Perfectly Paced Peril</h3>
+              <h3>Intense Survival Challenges</h3>
               <p>Perfectly paced cosmic threats keep you engaged. Asteroids, supernovas, and wormholes escalate at just the right tempo.</p>
             </div>
             <div className="game-overview-item">
               <div className="overview-icon">🏆</div>
-              <h3>Global Competition</h3>
+              <h3>Global Leaderboards</h3>
               <p>Compete for the top spots on worldwide leaderboards and unlock new planets</p>
             </div>
           </div>
@@ -259,7 +251,7 @@ export default function OrbitalPlaytest() {
               rel="noopener noreferrer"
               className="cta-button benefits-card-style"
             >
-              <span>Register for Playtest</span>
+              <span>Join the Playtest</span>
               <FaGamepad />
             </Link>
           </div>
@@ -285,78 +277,6 @@ export default function OrbitalPlaytest() {
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Studio Section */}
-      <section className="studio-section">
-        <div className="section-container">
-          <h2 className="section-title">About Classy Games</h2>
-          <div className="studio-content">
-            <div className="studio-text">
-              <p>
-                We're an independent game studio passionate about creating experiences that 
-                bring out your inner child. With a focus on fun, innovation, and player satisfaction, 
-                we craft games that are both nostalgic and fresh.
-              </p>
-              <p>
-                Orbital represents our commitment to pushing boundaries while maintaining the 
-                playful spirit that defines Classy Games. Join us on this cosmic journey!
-              </p>
-              <Link href="/about-us" className="learn-more-link">
-                Learn More About Us <FaPaperPlane />
-              </Link>
-            </div>
-            <div className="studio-logo-container">
-              <Image
-                src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"
-                alt="Classy Games Logo"
-                width={200}
-                height={200}
-                className="studio-logo"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Other Games Section */}
-      <section className="other-games-section">
-        <div className="section-container">
-          <h2 className="section-title">Also From Classy Games</h2>
-          <div className="game-showcase">
-            <div className="showcase-content">
-              <Image
-                src="/assets/Logos/SSLogo.png"
-                alt="Silly Suspects Logo"
-                width={400}
-                height={150}
-                className="showcase-logo"
-              />
-              <p className="showcase-description">
-                The perfect blend of mystery, comedy & chaos. Dive into a dynamically 
-                generated world of quirky characters and hilarious investigations.
-              </p>
-              <Link 
-                href="https://store.steampowered.com/app/3073330/SillySuspects" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="cta-button tertiary"
-              >
-                <span>View on Steam</span>
-                <FaPaperPlane />
-              </Link>
-            </div>
-            <div className="showcase-image">
-              <Image
-                src="/assets/Banners/homeBottom.png"
-                alt="Silly Suspects Characters"
-                width={500}
-                height={300}
-                className="showcase-screenshot"
-              />
-            </div>
           </div>
         </div>
       </section>
