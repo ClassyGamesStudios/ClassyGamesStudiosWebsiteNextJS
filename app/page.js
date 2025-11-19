@@ -16,9 +16,11 @@ export default function Home() {
   const logos = [
     "Exel_Logo.webp",
     "MerakCapital_Logo.webp",
-    "GJD_Logo.webp",
-    "MakersForge_Logo.webp",
+    "Microsoft_For_Startups_Logo.webp",
+    "Google_Cloud_Startup_Logo.webp",
+    "Amazon_Startup_Logo.webp",
     "SillySuspects_Logo.webp",
+    "Orbital_Logo.webp",
     "Steam_Logo.webp",
     "GameState_Logo.webp",
   ];
