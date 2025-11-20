@@ -122,7 +122,7 @@ export default function OrbitalPlaytest() {
         <div className="section-container">
           <h2 className="section-title">Game Overview</h2>
           <p className="overview-description">
-            You are a Planetary Pilot, humanity's elite. Tasked with prolonging the inevitable grasp of a supermassive blackhole. 
+            You are a Planetary Pilot, humanity&apos;s elite. Tasked with prolonging the inevitable grasp of a supermassive blackhole. 
             Dodge asteroids, navigate wormholes, and avoid shooting stars while utilising specialized planetary technologies alongside other Galactic Defenders. 
             Obtain Quanta to unlock new planets. Ascend amid global leaderboards. Success or Achievement or Glory is measured in seconds, not survival.
           </p>
