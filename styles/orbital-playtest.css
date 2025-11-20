@@ -494,6 +494,383 @@
   background-color: #6aa8d8;
 }
 
+/* First Defiance Section */
+.first-defiance-section {
+  padding: 6rem 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(25, 25, 25, 0.85),
+    rgba(25, 25, 25, 0.9)
+  ),
+  url("/assets/Banners/OrbitalBanner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+
+.first-defiance-section .section-title {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.defiance-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.defiance-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--classyBlue);
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.defiance-intro {
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 300;
+}
+
+.subsection-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: var(--classyBlue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.competition-categories {
+  margin-bottom: 5rem;
+}
+
+.cta-container-top {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.cta-container-bottom {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-top-row {
+  grid-column: span 2;
+  grid-column-end: span 2;
+}
+
+.category-bottom-row {
+  grid-column: span 2;
+  grid-column-end: span 2;
+}
+
+.category-stagger-left {
+  grid-column-start: 2;
+  grid-column-end: span 2;
+}
+
+.category-stagger-right {
+  grid-column-start: 4;
+  grid-column-end: span 2;
+}
+
+.category-card {
+  background-color: rgba(129, 186, 223, 0.1);
+  border: 2px solid var(--classyBlue);
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  width: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  background-color: rgba(129, 186, 223, 0.15);
+  box-shadow: 0 10px 30px rgba(129, 186, 223, 0.3);
+}
+
+.category-card.participation {
+  border-color: rgba(129, 186, 223, 0.6);
+  background-color: rgba(129, 186, 223, 0.05);
+}
+
+.category-icon {
+  font-size: 48px;
+  margin-bottom: 1rem;
+}
+
+.category-card h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.category-prize {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--classyBlue);
+  margin-bottom: 0.5rem;
+}
+
+.category-desc {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.prize-pool {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--classyBlue);
+  margin-top: 1.5rem;
+}
+
+.mission-and-rewards {
+  margin-bottom: 5rem;
+}
+
+.mission-rewards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mission-column,
+.rewards-column {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mission-column .subsection-title,
+.rewards-column .subsection-title {
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.mission-items,
+.rewards-items {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mission-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.mission-emoji {
+  font-size: 32px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--classyBlue);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.mission-text p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.reward-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.reward-emoji {
+  font-size: 32px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.reward-text {
+  flex: 1;
+}
+
+.reward-text h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.reward-text p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+.content-creator-rewards {
+  margin-bottom: 5rem;
+}
+
+.creator-intro {
+  text-align: center;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.creator-tiers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.creator-tier {
+  background-color: rgba(129, 186, 223, 0.1);
+  border: 2px solid var(--classyBlue);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+.creator-tier h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--classyBlue);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.creator-tier ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.creator-tier li {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.8;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(129, 186, 223, 0.2);
+}
+
+.creator-tier li:last-child {
+  border-bottom: none;
+}
+
+.creator-submit {
+  text-align: center;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  font-style: italic;
+}
+
+.competition-timeline {
+  margin-bottom: 4rem;
+}
+
+.timeline-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  position: relative;
+}
+
+.timeline-item {
+  background-color: rgba(129, 186, 223, 0.1);
+  border: 2px solid var(--classyBlue);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
+  background-color: rgba(129, 186, 223, 0.15);
+  box-shadow: 0 10px 30px rgba(129, 186, 223, 0.3);
+}
+
+.timeline-day {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--classyBlue);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.timeline-item h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.timeline-item p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+.defiance-footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(129, 186, 223, 0.1);
+  border-radius: 12px;
+  border: 1px solid rgba(129, 186, 223, 0.3);
+}
+
+.defiance-footer p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--classyBlue);
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
 /* FAQ Section */
 .faq-section {
   padding: 6rem 0;
@@ -739,8 +1116,53 @@
   }
   
   .overview-grid,
-  .benefits-grid {
+  .benefits-grid,
+  .creator-tiers,
+  .timeline-container {
     grid-template-columns: 1fr;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+  }
+  
+  .category-top-row,
+  .category-bottom-row {
+    grid-column: span 1 !important;
+    grid-column-start: 1 !important;
+  }
+  
+  .category-stagger-left,
+  .category-stagger-right {
+    grid-column-start: 1 !important;
+  }
+  
+  .mission-rewards-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  
+  .mission-column .subsection-title,
+  .rewards-column .subsection-title {
+    text-align: center;
+  }
+  
+  .defiance-subtitle {
+    font-size: 18px;
+  }
+  
+  .defiance-intro {
+    font-size: 16px;
+  }
+  
+  .subsection-title {
+    font-size: 24px;
+  }
+  
+  .category-card,
+  .timeline-item {
+    padding: 1.5rem;
   }
   
   .screenshots-gallery {
@@ -807,5 +1229,34 @@
   
   .step-number {
     font-size: 40px;
+  }
+  
+  .defiance-subtitle {
+    font-size: 16px;
+  }
+  
+  .defiance-intro {
+    font-size: 14px;
+  }
+  
+  .subsection-title {
+    font-size: 20px;
+  }
+  
+  .category-card h4,
+  .timeline-item h4 {
+    font-size: 18px;
+  }
+  
+  .creator-tier h4 {
+    font-size: 18px;
+  }
+  
+  .defiance-footer p {
+    font-size: 14px;
+  }
+  
+  .categories-grid {
+    grid-template-columns: 1fr;
   }
 }
