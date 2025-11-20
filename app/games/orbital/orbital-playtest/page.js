@@ -98,7 +98,7 @@ export default function OrbitalPlaytest() {
             </video>
           </div>
           <Link 
-            href="https://ojpazyzsqmrw.jp.larksuite.com/base/K86fb1n5Datm9xsOHXbjqGYZpGc?table=tblFaaiouIXvKSXN&view=vewElJ5MHM" 
+            href="https://ojpazyzsqmrw.jp.larksuite.com/share/base/form/shrjpDy4NpOr9TtkQHM89dGNFch" 
             target="_blank"
             rel="noopener noreferrer"
             className="cta-button primary"
@@ -244,16 +244,208 @@ export default function OrbitalPlaytest() {
               <p>Unlock special rewards, titles, and bonuses only available to playtesters</p>
             </div>
           </div>
-          <div className="cta-container">
-            <Link 
-              href="https://ojpazyzsqmrw.jp.larksuite.com/base/K86fb1n5Datm9xsOHXbjqGYZpGc?table=tblFaaiouIXvKSXN&view=vewElJ5MHM" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="cta-button benefits-card-style"
-            >
-              <span>Join the Playtest</span>
-              <FaGamepad />
-            </Link>
+        </div>
+      </section>
+
+      {/* First Defiance Section */}
+      <section className="first-defiance-section">
+        <div className="section-container">
+          <div className="defiance-header">
+            <h2 className="section-title">Next Playtest: &quot;First Defiance&quot;</h2>
+            <p className="defiance-subtitle">December 3-7, 2025 | Limited to 100 Planetary Pilots</p>
+            <p className="defiance-intro">
+              For three millennia, humanity knew this moment would come. Now, the Interstellar Defense Network needs you.
+              <br /><br />
+              First Defiance isn&apos;t just a playtest—it&apos;s a competition. Help us shape the development of Orbital while competing with your fellow Planetary Pilots for prizes, exclusive rewards, and eternal glory on our leaderboards.
+            </p>
+          </div>
+
+          <div className="competition-categories">
+            <div className="cta-container-top">
+              <Link 
+                href="https://ojpazyzsqmrw.jp.larksuite.com/share/base/form/shrjpDy4NpOr9TtkQHM89dGNFch" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button primary"
+              >
+                <span>Join the Playtest</span>
+                <FaGamepad />
+              </Link>
+            </div>
+            <h3 className="subsection-title">Competition Categories</h3>
+            <div className="categories-grid">
+              <div className="category-card category-top-row">
+                <div className="category-icon">🌍</div>
+                <h4>Top Planetary Pilot - Earth</h4>
+                <p className="category-prize">$15 Steam Gift Card</p>
+                <p className="category-desc">Highest score on Earth</p>
+              </div>
+              <div className="category-card category-top-row">
+                <div className="category-icon">🌙</div>
+                <h4>Top Planetary Pilot - Luna</h4>
+                <p className="category-prize">$15 Steam Gift Card</p>
+                <p className="category-desc">Highest score on Luna</p>
+              </div>
+              <div className="category-card category-top-row">
+                <div className="category-icon">☿️</div>
+                <h4>Top Planetary Pilot - Mercury</h4>
+                <p className="category-prize">$15 Steam Gift Card</p>
+                <p className="category-desc">Highest score on Mercury</p>
+              </div>
+              <div className="category-card category-bottom-row category-stagger-left">
+                <div className="category-icon">♀️</div>
+                <h4>Top Planetary Pilot - Venus</h4>
+                <p className="category-prize">$15 Steam Gift Card</p>
+                <p className="category-desc">Highest score on Venus</p>
+              </div>
+              <div className="category-card category-bottom-row category-stagger-right participation">
+                <div className="category-icon">🎲</div>
+                <h4>Participation Draw</h4>
+                <p className="category-prize">3 Winners × $5 Each</p>
+                <p className="category-desc">Random draw from all participants</p>
+              </div>
+            </div>
+            <p className="prize-pool">Total Prize Pool: $75 in Steam Gift Cards</p>
+          </div>
+
+          <div className="mission-and-rewards">
+            <div className="mission-rewards-grid">
+              <div className="mission-column">
+                <h3 className="subsection-title">Your Mission Parameters</h3>
+                <div className="mission-items">
+                  <div className="mission-item">
+                    <span className="mission-emoji">📅</span>
+                    <div className="mission-text">
+                      <h4>Operation Window</h4>
+                      <p>December 3-7, 2025</p>
+                    </div>
+                  </div>
+                  <div className="mission-item">
+                    <span className="mission-emoji">👥</span>
+                    <div className="mission-text">
+                      <h4>Available Slots</h4>
+                      <p>Limited to 100 Pilots</p>
+                    </div>
+                  </div>
+                  <div className="mission-item">
+                    <span className="mission-emoji">⏱️</span>
+                    <div className="mission-text">
+                      <h4>Mission Duration</h4>
+                      <p>5-10 minute survival runs</p>
+                    </div>
+                  </div>
+                  <div className="mission-item">
+                    <span className="mission-emoji">🏆</span>
+                    <div className="mission-text">
+                      <h4>Competition Format</h4>
+                      <p>Leaderboard-based scoring</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="rewards-column">
+                <h3 className="subsection-title">All Participants Receive</h3>
+                <div className="rewards-items">
+                  <div className="reward-item">
+                    <span className="reward-emoji">🎖️</span>
+                    <div className="reward-text">
+                      <h4>&quot;Day One Defender&quot; Role</h4>
+                      <p>Exclusive Discord role and recognition</p>
+                    </div>
+                  </div>
+                  <div className="reward-item">
+                    <span className="reward-emoji">📜</span>
+                    <div className="reward-text">
+                      <h4>Digital Certificate</h4>
+                      <p>Gold-bordered &quot;First Defiance&quot; certificate</p>
+                    </div>
+                  </div>
+                  <div className="reward-item">
+                    <span className="reward-emoji">💰</span>
+                    <div className="reward-text">
+                      <h4>Launch Discount</h4>
+                      <p>Minimum 10% off on Steam release</p>
+                    </div>
+                  </div>
+                  <div className="reward-item">
+                    <span className="reward-emoji">🎯</span>
+                    <div className="reward-text">
+                      <h4>Priority Access</h4>
+                      <p>First access to all future playtests</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="content-creator-rewards">
+            <h3 className="subsection-title">Content Creator Rewards</h3>
+            <p className="creator-intro">Share your gameplay, epic moments, and reactions to earn additional rewards and recognition!</p>
+            <div className="creator-tiers">
+              <div className="creator-tier">
+                <h4>Contributor</h4>
+                <ul>
+                  <li>1 clip or post = Name in credits</li>
+                  <li>5 clips or posts = +5% discount + Top Supporter credit</li>
+                </ul>
+              </div>
+              <div className="creator-tier">
+                <h4>Influencer</h4>
+                <ul>
+                  <li>1,000+ views/engagement = Season Pass discount</li>
+                  <li>10,000+ views/engagement = Free game copy</li>
+                </ul>
+              </div>
+              <div className="creator-tier">
+                <h4>Viral Creator</h4>
+                <ul>
+                  <li>50,000+ views/engagement = $20 Steam Credit</li>
+                </ul>
+              </div>
+            </div>
+            <p className="creator-submit">Submit content via Discord or tag Classy Games on social media</p>
+          </div>
+
+          <div className="competition-timeline">
+            <h3 className="subsection-title">Competition Timeline</h3>
+            <div className="timeline-container">
+              <div className="timeline-item">
+                <div className="timeline-day">Day 1 (Wed)</div>
+                <h4>Launch</h4>
+                <p>Playtest opens, rules posted, competition begins</p>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-day">Days 2-4</div>
+                <h4>Active Competition</h4>
+                <p>Daily leaderboard updates and community highlights</p>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-day">Day 5 (Sun)</div>
+                <h4>Final Day</h4>
+                <p>Last chance to climb the leaderboards (midnight deadline)</p>
+              </div>
+              <div className="timeline-item">
+                <div className="timeline-day">Day 7 (Tue)</div>
+                <h4>Winners Announced</h4>
+                <p>Prize winners revealed and rewards distributed</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="defiance-footer">
+            <p>Registration required. Limited to 100 Planetary Pilots. First come, first served.</p>
+            <div className="cta-container-bottom">
+              <Link 
+                href="https://ojpazyzsqmrw.jp.larksuite.com/share/base/form/shrjpDy4NpOr9TtkQHM89dGNFch" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="cta-button primary"
+              >
+                <span>Join the Playtest</span>
+                <FaGamepad />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
