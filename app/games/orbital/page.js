@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default function OrbitalPage() {
   const [activeScreenshot, setActiveScreenshot] = useState(0);
 
-  const STEAM_APP_ID = 3073330;
+  const STEAM_APP_ID = 3891880;
   const STEAM_WIDGET_ENABLED = true;
 
   const screenshots = [
@@ -72,9 +72,9 @@ export default function OrbitalPage() {
             <p className="coming-soon">Coming Soon</p>
             <div className="trailer-container">
               <iframe
-                  src="https://www.youtube.com/embed/xHljIZBbMU0?si=wJ7VtyfWzVxXzq0x"
+                  src="https://youtu.be/-e4wyXCtN5w"
                   allowFullScreen
-                  title="Orbital Gameplay Trailer"
+                  title="Orbital Teaser Trailer"
                   loading="lazy"
               ></iframe>
             </div>
