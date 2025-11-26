@@ -4,6 +4,23 @@
   width: 100vw;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: auto;
+}
+
+/* Override global scroll behavior for orbital page */
+html:has(.orbital-page) {
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  scroll-behavior: auto !important;
+  height: auto !important;
+}
+
+html:has(.orbital-page) body {
+  overflow-x: hidden !important;
+  /* overflow-y removed - html handles scrolling */
+  scroll-behavior: auto !important;
+  height: auto !important;
+  position: relative !important;
 }
 
 .hero-section {
@@ -27,7 +44,6 @@
   background: url("/assets/Heroes/OrbitalHero.webp");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   z-index: 1;
 }
 
@@ -117,6 +133,34 @@
   width: 100%;
   height: 100%;
   border: none;
+}
+
+.trailer-container .promo-featured {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.wishlist-button-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.wishlist-button-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+.wishlist-button {
+  width: auto;
+  height: auto;
+  max-width: 1030px;
+  max-height: 185px;
+  filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
 }
 
 .cta-button {
@@ -216,7 +260,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: visible;
   padding: 10px 20px;
   background-color: white;
   margin-top: 0;
@@ -256,6 +301,8 @@
   justify-content: center;
   align-items: center;
   transform: scale(1.2);
+  pointer-events: auto;
+  overflow: visible;
 }
 
 .steam-widget-placeholder {
@@ -296,6 +343,15 @@
   line-height: 1.6;
 }
 
+/* Prevent Steam widget iframe from interfering with page scroll */
+.steam-widget-content iframe {
+  display: block;
+  border: none;
+  pointer-events: auto;
+  /* Ensure iframe doesn't create scroll context */
+  overflow: visible;
+}
+
 /* Wave at bottom of Steam Widget - Classy Black (transitions to Game Overview black background) */
 .steam-widget-wave {
   position: absolute;
@@ -310,7 +366,7 @@
 /* Game Overview Section - Classy Black Background */
 .game-overview-section {
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 0 8rem 0;
   background-color: var(--classyBlack);
   margin-bottom: 0;
 }
@@ -387,7 +443,7 @@
   bottom: -1px;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 120px;
   fill: white;
   z-index: 2;
 }
@@ -411,9 +467,9 @@
 .screenshot-display {
   width: 100%;
   max-width: 900px;
-  border-radius: 10px;
+  border-radius: 15px;
   overflow: hidden;
-  border: 6px solid var(--classyBlue);
+  border: 3px solid var(--classyBlue);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
 }
 
@@ -424,13 +480,10 @@
 }
 
 .screenshot-carousel {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   gap: 1rem;
-  justify-items: center;
-  max-width: 900px;
-  width: 100%;
-  margin: 0 auto;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .screenshot-thumb {
@@ -439,7 +492,7 @@
   background: transparent;
   border-radius: 10px;
   overflow: hidden;
-  border: 3px solid var(--classyBlue);
+  border: 2px solid transparent;
   transition: transform 0.2s ease, border-color 0.2s ease;
   cursor: pointer;
 }
@@ -456,7 +509,7 @@
 
 .screenshot-thumb-image {
   display: block;
-  width: 100%;
+  width: 160px;
   height: auto;
   border-radius: 8px;
 }
@@ -516,7 +569,7 @@
   }
 
   .screenshot-carousel {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
   }
 
   .screenshot-thumb-image {

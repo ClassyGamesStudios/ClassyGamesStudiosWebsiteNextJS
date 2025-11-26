@@ -185,37 +185,37 @@ export default function OrbitalPlaytest() {
           <h2 className="section-title">How Does The Playtest Work?</h2>
           <div className="process-container">
             <div className="process-step">
+              <div className="step-number">01</div>
               <div className="step-icon">
                 <FaUserPlus />
               </div>
-              <div className="step-number">01</div>
               <h3>Register</h3>
               <p>Sign up with using our form to secure your spot in the exclusive playtest</p>
             </div>
             <div className="process-connector"></div>
             <div className="process-step">
+              <div className="step-number">02</div>
               <div className="step-icon">
                 <FaPaperPlane />
               </div>
-              <div className="step-number">02</div>
               <h3>Contact</h3>
               <p>Receive your invite and instructions</p>
             </div>
             <div className="process-connector"></div>
             <div className="process-step">
+              <div className="step-number">03</div>
               <div className="step-icon">
                 <FaClipboardCheck />
               </div>
-              <div className="step-number">03</div>
               <h3>Test</h3>
               <p>Play the game and provide valuable feedback to shape the final experience</p>
             </div>
             <div className="process-connector"></div>
             <div className="process-step">
+              <div className="step-number">04</div>
               <div className="step-icon">
                 <FaGift />
               </div>
-              <div className="step-number">04</div>
               <h3>Rewards</h3>
               <p>Earn exclusive in-game rewards and recognition as a founding pilot</p>
             </div>
@@ -256,7 +256,7 @@ export default function OrbitalPlaytest() {
             <p className="defiance-intro">
               For three millennia, humanity knew this moment would come. Now, the Interstellar Defense Network needs you.
               <br /><br />
-              First Defiance isn&apos;t just a playtest—it&apos;s a competition. Help us shape the development of Orbital while competing with your fellow Planetary Pilots for prizes, exclusive rewards, and eternal glory on our leaderboards.
+              First Defiance isn&apos;t just a playtest, it&apos;s a competition. Help us shape the development of Orbital while competing with your fellow Planetary Pilots for prizes, exclusive rewards, and eternal glory on our leaderboards.
             </p>
           </div>
 
@@ -387,20 +387,20 @@ export default function OrbitalPlaytest() {
                 <h4>Contributor</h4>
                 <ul>
                   <li>1 clip or post = Name in credits</li>
-                  <li>5 clips or posts = +5% discount + Top Supporter credit</li>
+                  <li>5 clips or posts = +5% discount / Top Supporter credit</li>
                 </ul>
               </div>
               <div className="creator-tier">
                 <h4>Influencer</h4>
                 <ul>
-                  <li>1,000+ views/engagement = Season Pass discount</li>
-                  <li>10,000+ views/engagement = Free game copy</li>
+                  <li>1,000+ views/engagement = Silly Suspects discount</li>
+                  <li>10,000+ views/engagement = Free Orbital game copy</li>
                 </ul>
               </div>
               <div className="creator-tier">
                 <h4>Viral Creator</h4>
                 <ul>
-                  <li>50,000+ views/engagement = $20 Steam Credit</li>
+                  <li>50,000+ views/engagement = $20 Steam Gift Card</li>
                 </ul>
               </div>
             </div>
