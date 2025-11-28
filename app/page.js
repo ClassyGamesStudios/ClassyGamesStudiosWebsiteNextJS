@@ -1,8 +1,9 @@
 "use client";
 import "@/styles/globals.css";
+import "@/styles/orbital.css";
 import Image from "next/image";
 import Link from "next/link";
-import { FaPaperPlane } from "react-icons/fa";
+import { FaPaperPlane, FaGamepad } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -43,13 +44,11 @@ export default function Home() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(".indie-text", { x: -100, opacity: 0 });
-      gsap.to(".indie-text", {
-        x: 0,
-        delay: 0.5,
-        opacity: 1,
-        duration: 0.5,
-        ease: "power1.out",
+      gsap.from(".hero-content", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out",
       });
       gsap.from(".about-us-cnt", {
         scrollTrigger: {
@@ -76,107 +75,52 @@ export default function Home() {
 
   return (
     <div className="body">
-      <main className="upper-body">
-        <div className="home-banner-text">
-          Creating engaging games that <br />
-          ignite your imagination and <br />
-          bring out your inner child.
+      {/* Hero Section */}
+      <section className="hero-section">
+        <div className="hero-bg">
+          <div className="hero-overlay"></div>
         </div>
-        <div className="home-banner">
-          <div className="marqueeContainer">
-            <div className="scroll">
-              <svg
-                className="scrollerSvg"
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                fill="#81badf"
-                fillRule="evenodd"
-                viewBox="0 0 1000 35"
-              >
-                <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
-              </svg>
-              {/*<Marquee play={marqueePlay}>*/}
-              {/*  <div className="scroller-track ">*/}
-              {/*    {[...Array(2)].map((_, i) => (*/}
-              {/*      <div className="scroller-content" key={i}>*/}
-              {/*        <div className="scroller-text">*/}
-              {/*          Keepin&apos; it classy*/}
-              {/*        </div>*/}
-              {/*        <Image*/}
-              {/*          src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"*/}
-              {/*          alt="Logo"*/}
-              {/*          width={70}*/}
-              {/*          height={100}*/}
-              {/*          className="scroll-logo"*/}
-              {/*        />*/}
-              {/*        <div className="scroller-text">*/}
-              {/*          Keepin&apos; it classy*/}
-              {/*        </div>*/}
-              {/*        <Image*/}
-              {/*          src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"*/}
-              {/*          alt="Logo"*/}
-              {/*          width={70}*/}
-              {/*          height={100}*/}
-              {/*          className="scroll-logo"*/}
-              {/*        />*/}
-              {/*        <div className="scroller-text">*/}
-              {/*          Keepin&apos; it classy*/}
-              {/*        </div>*/}
-              {/*        <Image*/}
-              {/*          src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"*/}
-              {/*          alt="Logo"*/}
-              {/*          width={70}*/}
-              {/*          height={100}*/}
-              {/*          className="scroll-logo"*/}
-              {/*        />*/}
-              {/*        <div className="scroller-text">*/}
-              {/*          Keepin&apos; it classy*/}
-              {/*        </div>*/}
-              {/*        <Image*/}
-              {/*          src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"*/}
-              {/*          alt="Logo"*/}
-              {/*          width={70}*/}
-              {/*          height={100}*/}
-              {/*          className="scroll-logo"*/}
-              {/*        />*/}
-              {/*        <div className="scroller-text">*/}
-              {/*          Keepin&apos; it classy*/}
-              {/*        </div>*/}
-              {/*        <Image*/}
-              {/*          src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"*/}
-              {/*          alt="Logo"*/}
-              {/*          width={70}*/}
-              {/*          height={100}*/}
-              {/*          className="scroll-logo"*/}
-              {/*        />*/}
-              {/*        <div className="scroller-text">*/}
-              {/*          Keepin&apos; it classy*/}
-              {/*        </div>*/}
-              {/*        <Image*/}
-              {/*          src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"*/}
-              {/*          alt="Logo"*/}
-              {/*          width={70}*/}
-              {/*          height={100}*/}
-              {/*          className="scroll-logo"*/}
-              {/*        />*/}
-              {/*        <div className="scroller-text">*/}
-              {/*          Keepin&apos; it classy*/}
-              {/*        </div>*/}
-              {/*        <Image*/}
-              {/*          src="/assets/Logos/ClassyGamesStudiosTransparent_Logo.webp"*/}
-              {/*          alt="Logo"*/}
-              {/*          width={70}*/}
-              {/*          height={100}*/}
-              {/*          className="scroll-logo"*/}
-              {/*        />*/}
-              {/*      </div>*/}
-              {/*    ))}*/}
-              {/*  </div>*/}
-              {/*</Marquee>*/}
-            </div>
+        <div className="hero-content">
+          <Image
+              src="/assets/Logos/OrbitalLogo.webp"
+              alt="Orbital Logo"
+              width={750}
+              height={270}
+              className="orbital-hero-logo"
+              priority
+          />
+          <h1 className="hero-tagline">No Escape. No Salvation. Only Time.</h1>
+          <p className="coming-soon">JOIN THE NEXT PLAYTEST</p>
+          <div className="trailer-container">
+            <video
+              className="promo-featured"
+              autoPlay
+              playsInline
+              muted
+              loop
+              poster="/assets/Heroes/OrbitalPromo.png"
+            >
+              <source src="/assets/Videos/orbital_video_placeholder.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </div>
+          <Link
+              href="/games/orbital/orbital-playtest"
+              className="cta-button primary"
+          >
+            <span>Join the Playtest</span>
+            <FaGamepad />
+          </Link>
         </div>
-      </main>
+        <svg
+            className="hero-wave"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            viewBox="0 0 1000 35"
+        >
+          <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
+        </svg>
+      </section>
       <main className="lower-body">
         {/*<div className="hook">WHAT WE ARE CURRENTLY COOKING UP</div>*/}
         <Link

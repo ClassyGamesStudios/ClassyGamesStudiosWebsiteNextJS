@@ -2,13 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import Link from "next/link";
 import "@/styles/orbital.css";
 import { FaSteam } from "react-icons/fa";
-
-gsap.registerPlugin(ScrollTrigger);
 
 export default function OrbitalPage() {
   const [activeScreenshot, setActiveScreenshot] = useState(0);
@@ -17,14 +14,12 @@ export default function OrbitalPage() {
   const STEAM_WIDGET_ENABLED = true;
 
   const screenshots = [
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_001.png", alt: "Orbital Gameplay Screenshot 1" },
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_002.png", alt: "Orbital Gameplay Screenshot 2" },
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_003.png", alt: "Orbital Gameplay Screenshot 3" },
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_004.png", alt: "Orbital Gameplay Screenshot 4" },
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_005.png", alt: "Orbital Gameplay Screenshot 1" },
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_006.png", alt: "Orbital Gameplay Screenshot 2" },
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_007.png", alt: "Orbital Gameplay Screenshot 3" },
-    { src: "/assets/GameScreenshots/Orbital/OrbitalScreenshot_008.png", alt: "Orbital Gameplay Screenshot 4" },
+    { src: "/assets/GameScreenshots/Orbital/Earth_Menu.png", alt: "Orbital Earth menu" },
+    { src: "/assets/GameScreenshots/Orbital/Earth_GameVerThree.png", alt: "Orbital Earth gameplay" },
+    { src: "/assets/GameScreenshots/Orbital/Leaderboard_VerTwo.png", alt: "Orbital leaderboard view" },
+    { src: "/assets/GameScreenshots/Orbital/Luna_GameVerFour.png", alt: "Orbital Luna gameplay" },
+    { src: "/assets/GameScreenshots/Orbital/Store_VerOne.png", alt: "Orbital in-game store" },
+    { src: "/assets/GameScreenshots/Orbital/Venus_Menu.png", alt: "Orbital Venus menu" },
   ];
 
   useEffect(() => {
@@ -35,22 +30,11 @@ export default function OrbitalPage() {
         duration: 1,
         ease: "power3.out",
       });
-
-      requestAnimationFrame(() => {
-        ScrollTrigger.refresh();
-      });
     });
 
     return () => ctx.revert();
   }, []);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveScreenshot((prev) => (prev + 1) % screenshots.length);
-    }, 5000);
-
-    return () => clearInterval(interval);
-  }, [screenshots.length]);
 
   return (
       <div className="orbital-page">
@@ -78,6 +62,21 @@ export default function OrbitalPage() {
                   loading="lazy"
               ></iframe>
             </div>
+            <Link
+                href="https://store.steampowered.com/app/3891880/Orbital/?curator_clanid=4777282"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="wishlist-button-link"
+            >
+              <Image
+                  src="/images/wishlist button.png"
+                  alt="Add to Steam Wishlist"
+                  width={1030}
+                  height={185}
+                  className="wishlist-button"
+                  priority
+              />
+            </Link>
           </div>
           <svg
               className="hero-wave"
@@ -137,77 +136,63 @@ export default function OrbitalPage() {
           <div className="section-container">
             <h2 className="section-title">Game Overview</h2>
             <p className="overview-description">
-              Step into the role of planetary pilot in this groundbreaking survival game where time is your only enemy.
-              Navigate your planet through the cosmos, avoiding celestial hazards while the inevitable pull of a black hole
-              grows stronger. How long can you keep your world alive?
+              You are a Planetary Pilot, humanity&apos;s elite. Tasked with prolonging the inevitable grasp of a supermassive blackhole. 
+              Dodge asteroids, navigate wormholes, and avoid shooting stars while utilising specialized planetary technologies alongside other Galactic Defenders. 
+              Obtain Quanta to unlock new planets. Ascend amid global leaderboards. Success or Achievement or Glory is measured in seconds, not survival.
             </p>
             <div className="overview-grid">
               <div className="game-overview-item">
                 <div className="overview-icon">🌍</div>
-                <h3>Dynamic Planetary Control</h3>
+                <h3>Dynamic Planetary Technologies</h3>
                 <p>Master unique planetary technologies to navigate through space-time anomalies</p>
               </div>
               <div className="game-overview-item">
                 <div className="overview-icon">⚡</div>
-                <h3>Intense Survival Gameplay</h3>
-                <p>Face escalating challenges as asteroids, supernovas, and wormholes threaten your planet</p>
+                <h3>Intense Survival Challenges</h3>
+                <p>Perfectly paced cosmic threats keep you engaged. Asteroids, supernovas, and wormholes escalate at just the right tempo.</p>
               </div>
               <div className="game-overview-item">
                 <div className="overview-icon">🏆</div>
-                <h3>Global Competition</h3>
+                <h3>Global Leaderboards</h3>
                 <p>Compete for the top spots on worldwide leaderboards and unlock new planets</p>
               </div>
             </div>
-          </div>
-          <svg
-              className="game-overview-wave"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              viewBox="0 0 1000 35"
-          >
-            <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
-          </svg>
-        </section>
-
-        {/* Screenshots Section */}
-        <section className="screenshots-section">
-          <div className="section-container">
             <div className="screenshots-gallery">
               <div className="screenshot-display">
                 <Image
-                    src={screenshots[activeScreenshot].src}
-                    alt={screenshots[activeScreenshot].alt}
-                    width={800}
-                    height={450}
-                    className="screenshot-featured"
-                    priority
+                  src={screenshots[activeScreenshot].src}
+                  alt={screenshots[activeScreenshot].alt}
+                  width={800}
+                  height={450}
+                  className="screenshot-featured"
+                  priority
                 />
               </div>
               <div className="screenshot-carousel">
                 {screenshots.map((shot, index) => (
-                    <button
-                        key={shot.src}
-                        className={`screenshot-thumb ${
-                            activeScreenshot === index ? "active" : ""
-                        }`}
-                        onClick={() => setActiveScreenshot(index)}
-                        type="button"
-                        aria-label={`View ${shot.alt}`}
-                    >
-                      <Image
-                          src={shot.src}
-                          alt={shot.alt}
-                          width={200}
-                          height={130}
-                          className="screenshot-thumb-image"
-                      />
-                    </button>
+                  <button
+                    key={shot.src}
+                    className={`screenshot-thumb ${
+                      activeScreenshot === index ? "active" : ""
+                    }`}
+                    onClick={() => setActiveScreenshot(index)}
+                    type="button"
+                    aria-label={`View ${shot.alt}`}
+                  >
+                    <Image
+                      src={shot.src}
+                      alt={shot.alt}
+                      width={160}
+                      height={90}
+                      className="screenshot-thumb-image"
+                    />
+                  </button>
                 ))}
               </div>
             </div>
           </div>
           <svg
-              className="screenshots-wave"
+              className="game-overview-wave"
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
               viewBox="0 0 1000 35"
