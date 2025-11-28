@@ -54,13 +54,13 @@ export default function Footer() {
                 <div className="second">
                     <h2>MENU</h2>
                     <Link href="/">Home</Link>
-                    <Link href="/about-us.js">About</Link>
-                    <Link href="/careers.js">Careers</Link>
-                    <Link href="/contact.js">Contact</Link>
+                    <Link href="/about/">About</Link>
+                    <Link href="/careers/">Careers</Link>
+                    <Link href="/contact/">Contact</Link>
                 </div>
                 <div className="second">
                     <h2>GAMES</h2>
-                    <Link href="/sillysuspects">SillySuspects</Link>
+                    <Link href="/games/sillysuspects/">SillySuspects</Link>
                     <a
                         href="https://www.canva.com/design/DAGUB8zpBog/Fkws_U-b2SYgafYY83WDtw/view?utm_content=DAGUB8zpBog&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h725febeff0"
                         target="_blank"
