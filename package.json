@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@microsoft/clarity": "^1.0.2",
     "classnames": "^2.5.1",
     "gsap": "^3.13.0",
     "lucide-react": "^0.507.0",
