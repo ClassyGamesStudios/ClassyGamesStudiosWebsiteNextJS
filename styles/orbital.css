@@ -451,7 +451,7 @@ html:has(.orbital-page) body {
 /* Screenshots Section */
 .screenshots-section {
   position: relative; /* ADD THIS */
-  padding: 4rem 0;
+  padding: 2rem 0 4rem;
   background-color: white;
   margin-top: 0;
   margin-bottom: 0; /* ADD THIS */
@@ -608,6 +608,10 @@ html:has(.orbital-page) body {
 
   .steam-widget-placeholder p {
     font-size: 16px;
+  }
+
+  .screenshots-section {
+    padding: 1rem 0 3rem;
   }
 }
 

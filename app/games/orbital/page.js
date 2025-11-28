@@ -157,6 +157,20 @@ export default function OrbitalPage() {
                 <p>Compete for the top spots on worldwide leaderboards and unlock new planets</p>
               </div>
             </div>
+          </div>
+          <svg
+              className="game-overview-wave"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              viewBox="0 0 1000 35"
+          >
+            <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
+          </svg>
+        </section>
+
+        {/* Screenshots Section - White Section Above Footer */}
+        <section className="screenshots-section">
+          <div className="section-container">
             <div className="screenshots-gallery">
               <div className="screenshot-display">
                 <Image
@@ -192,10 +206,10 @@ export default function OrbitalPage() {
             </div>
           </div>
           <svg
-              className="game-overview-wave"
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              viewBox="0 0 1000 35"
+            className="screenshots-wave"
+            xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="none"
+            viewBox="0 0 1000 35"
           >
             <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
           </svg>

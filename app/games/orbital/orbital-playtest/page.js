@@ -252,7 +252,7 @@ export default function OrbitalPlaytest() {
         <div className="section-container">
           <div className="defiance-header">
             <h2 className="section-title">Next Playtest: &quot;First Defiance&quot;</h2>
-            <p className="defiance-subtitle">December 3-7, 2025 | Limited to 100 Planetary Pilots</p>
+            <p className="defiance-subtitle">December 10-14, 2025 | Limited to 100 Planetary Pilots</p>
             <p className="defiance-intro">
               For three millennia, humanity knew this moment would come. Now, the Interstellar Defense Network needs you.
               <br /><br />
@@ -317,7 +317,7 @@ export default function OrbitalPlaytest() {
                     <span className="mission-emoji">📅</span>
                     <div className="mission-text">
                       <h4>Operation Window</h4>
-                      <p>December 3-7, 2025</p>
+                      <p>December 10-14, 2025</p>
                     </div>
                   </div>
                   <div className="mission-item">
