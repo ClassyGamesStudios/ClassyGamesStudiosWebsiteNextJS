@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaEnvelope } from "react-icons/fa";
 import Link from "next/link";
 import "@/styles/careers.css";
 import "@/styles/contact.css";
-import "@/styles/about-us.css";
+import "@/styles/about.css";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

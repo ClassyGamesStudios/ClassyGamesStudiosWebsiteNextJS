@@ -62,21 +62,21 @@ export default function OrbitalPage() {
                   loading="lazy"
               ></iframe>
             </div>
-            <Link
-                href="https://store.steampowered.com/app/3891880/Orbital/?curator_clanid=4777282"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="wishlist-button-link"
-            >
-              <Image
-                  src="/images/wishlist button.png"
-                  alt="Add to Steam Wishlist"
-                  width={1030}
-                  height={185}
-                  className="wishlist-button"
-                  priority
-              />
-            </Link>
+            {/*<Link*/}
+            {/*    href="https://store.steampowered.com/app/3891880/Orbital/?curator_clanid=4777282"*/}
+            {/*    target="_blank"*/}
+            {/*    rel="noopener noreferrer"*/}
+            {/*    className="wishlist-button-link"*/}
+            {/*>*/}
+            {/*  <Image*/}
+            {/*      src="/images/wishlist button.png"*/}
+            {/*      alt="Add to Steam Wishlist"*/}
+            {/*      width={1030}*/}
+            {/*      height={185}*/}
+            {/*      className="wishlist-button"*/}
+            {/*      priority*/}
+            {/*  />*/}
+            {/*</Link>*/}
           </div>
           <svg
               className="hero-wave"

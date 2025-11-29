@@ -86,8 +86,8 @@ export default function Footer() {
                     >
                         Classy Games Media Kit
                     </a>
-                    <Link href="/">Privacy Policy</Link>
-                    <Link href="/">Terms of Service</Link>
+                    <Link href="/privacypolicy">Privacy Policy</Link>
+                    <Link href="/termsofservice">Terms of Service</Link>
                 </div>
                 <div className="fourth">
                     <h2>LOCATIONS</h2>
