@@ -74,7 +74,7 @@ export default function TermsOfService() {
               If you send us feedback or user generated content, we may use it to improve our games.
               <br /><br />
               • Legal protections
-              Our services are provided "as is" and we are not responsible for indirect damages.
+              Our services are provided &quot;as is&quot; and we are not responsible for indirect damages.
               We always aim to offer a positive and safe experience.
               <br /><br />
               You can read the full Terms below for complete details.
@@ -208,7 +208,7 @@ export default function TermsOfService() {
           <div className="dark-content fadein">
             <h1 className="dark-title">Warranties and Liability</h1>
             <p className="dark-paragraph">
-              Classy Games Services are provided "as is" and "as available".
+              Classy Games Services are provided &quot;as is&quot; and &quot;as available&quot;.
               No warranties of any kind are provided.
               <br /><br />
               We are not liable for indirect, incidental, or consequential damages including
