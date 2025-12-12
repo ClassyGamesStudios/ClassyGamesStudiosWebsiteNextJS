@@ -62,7 +62,6 @@ export default function OrbitalPage() {
                             className="orbital-hero-logo"
                             priority
                         />
-                        <h1 className="hero-tagline">No Escape. No Salvation. Only Time.</h1>
                         <p className="coming-soon">Coming 2026</p>
                         <div className="trailer-container">
                             <iframe
