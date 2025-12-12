@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect } from "react";
-import "@/styles/privacypolicy.css"; // Make sure this points to your privacy CSS
+import "@/styles/privacypolicy.css";
 import { gsap } from "gsap";
 
 export default function PrivacyPolicy() {
