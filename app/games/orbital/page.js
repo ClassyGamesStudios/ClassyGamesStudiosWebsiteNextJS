@@ -1,6 +1,6 @@
 "use client";
 
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {gsap} from "gsap";
 import Image from "next/image";
 import Link from "next/link";
@@ -44,7 +44,8 @@ export default function OrbitalPage() {
             fill={color}
             viewBox="0 0 1000 35"
         >
-            <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z"/>
+            <path
+                d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z"/>
         </svg>
     );
 
@@ -54,26 +55,40 @@ export default function OrbitalPage() {
             <main className="orbital-page">
                 <div className="orbital-banner">
                     <div className="orbital-text-cnt fadein">
-                        <Image
-                            src="/assets/Logos/OrbitalLogo.webp"
-                            alt="Orbital Logo"
-                            width={750}
-                            height={270}
-                            className="orbital-hero-logo"
-                            priority
-                        />
+                        <Link
+                            href="https://store.steampowered.com/app/3891880/Orbital"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Image
+                                src="/assets/Logos/OrbitalLogo.webp"
+                                alt="Orbital Logo"
+                                width={750}
+                                height={270}
+                                className="orbital-hero-logo"
+                                priority
+                            />
+                        </Link>
                         <p className="coming-soon">Coming 2026</p>
                         <div className="trailer-container">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/-e4wyXCtN5w?si=Lkg8PSBTn-f8YLFZ&autoplay=1&mute=1&loop=1&playlist=-e4wyXCtN5w"
-                                title="Orbital Trailer"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen>
-                            </iframe>
+                            <video
+                                className="promo-featured"
+                                autoPlay
+                                playsInline
+                                muted
+                                loop
+                            >
+                                <source src="/assets/Videos/Orbital_Teaser_Trailer.mp4" type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div className="mission-button-wrapper fadein">
+                            <Link
+                                href="/games/orbital/orbital-mission"
+                                className="mission-button"
+                            >
+                                JOIN ORBITAL MISSIONS
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -112,7 +127,7 @@ export default function OrbitalPage() {
                         </div>
                     )}
                 </div>
-                <Wave />
+                <Wave/>
             </main>
 
             {/* ====================== GAME OVERVIEW (DARK) ====================== */}
@@ -130,27 +145,94 @@ export default function OrbitalPage() {
                         <div className="game-overview-item">
                             <div className="overview-icon">🪐</div>
                             <h3>Master Planetary Technologies</h3>
-                            <p>Each planet has three unique technologies. Learn the tech and combine them to survive longer.</p>
+                            <p>Each planet has three unique technologies. Learn the tech and combine them to survive
+                                longer.</p>
                         </div>
 
                         <div className="game-overview-item">
                             <div className="overview-icon">☄️</div>
                             <h3>Navigate the Cosmic Onslaught</h3>
-                            <p>Dodge escalating asteroid fields, debris storms, and gravity distortions as the black hole closes in.</p>
+                            <p>Dodge escalating asteroid fields, debris storms, and gravity distortions as the black
+                                hole closes in.</p>
                         </div>
 
                         <div className="game-overview-item">
                             <div className="overview-icon">⚡</div>
                             <h3>Awaken New Planets</h3>
-                            <p>Earn Quanta each mission to unlock new planets with different technologies and playstyles.</p>
+                            <p>Earn Quanta each mission to unlock new planets with different technologies and
+                                playstyles.</p>
                         </div>
 
                         <div className="game-overview-item">
                             <div className="overview-icon">🏆</div>
                             <h3>Ascend the Global Leaderboards</h3>
-                            <p>Your survival time is your Quanta score. Push longer runs to climb the worldwide rankings.</p>
+                            <p>Your survival time is your Quanta score. Push longer runs to climb the worldwide
+                                rankings.</p>
                         </div>
                     </div>
+
+                    <p className="dark-paragraph">
+                        For three millennia, humanity has known this moment would come. There is no escape. There is no
+                        salvation. There is only time.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        When our ancestors first detected the supermassive black hole and its trajectory was towards our
+                        solar system, they began the greatest preparation in human history. Every planet in the system
+                        was colonised and transformed into fortress worlds, ready for the final battle. Each planet was
+                        outfitted with unparalleled planetary technologies, the pinnacle of human ingenuity, born from
+                        our most desperate hours. These innovations were created with a singular purpose: to delay the
+                        inevitable and postpone doom.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        The Interstellar Defense Network (IDN) was formed with a single mandate: when the black hole
+                        arrives, make every second count. Its gravitational pull is absolute, its hunger insatiable, its
+                        advance unstoppable. One by one, the planets we spent millennia preparing are being dragged
+                        toward oblivion. Your mission is not to save these world&apos;s, that outcome was sealed eons
+                        ago, but to buy humanity precious time to evacuate to distant systems, where humanity can
+                        survive. Every second matters. Every moment of survival is a small victory against the
+                        inevitable.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        You are one of the IDN&apos;s Planetary Pilots, the pinnacle of human potential. Chosen from
+                        billions and trained from childhood, your reflexes, intellect, and willpower represent the
+                        absolute peak of unmodified human ability. Planetary Pilots undergo years of rigorous neural
+                        conditioning to harmonize with a planet&apos;s command core, forging an unbreakable bond with
+                        the world they defend.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        Strapped into the command core, you do not simply control the planet, you become it. Every
+                        technology embedded in its crust, every defense system woven through its atmosphere, responds to
+                        your will.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        Endure chaotic asteroid fields as gravitational forces tear the solar system apart. Deploy your
+                        planet&apos;s technologies to withstand the relentless onslaught of cosmic debris, all while the
+                        black hole&apos;s pull grows stronger, inevitable and absolute. Whether you are consumed by
+                        infinite darkness or shattered against an asteroid in a final act of defiance, the outcome is
+                        certain: death.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        Yet, for every second you wrestle back from oblivion, you earn Quanta energy, harvested from the
+                        very edge of destruction. The IDN channels this energy to awaken dormant planets, unlocking
+                        their unique defense technologies to fuel humanity&apos;s ongoing resistance and allowing you to
+                        experience new strategies for delaying the end.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        But no matter which world you pilot, no matter which technologies you deploy, the outcome never
+                        changes. The black hole waits. The asteroids swarm. And eventually, inevitably, you fall.
+                    </p>
+
+                    <p className="dark-paragraph">
+                        This is Orbital: an infinite survival challenge where victory is measured not in winning, but in
+                        lasting.
+                    </p>
                 </div>
                 <Wave color="white"/>
             </main>
@@ -158,7 +240,7 @@ export default function OrbitalPage() {
             {/* ====================== SCREENSHOTS (LIGHT) ====================== */}
             <main className="light-section screenshots-light-section">
                 <div className="light-content fadein">
-                <div className="screenshots-gallery">
+                    <div className="screenshots-gallery">
                         <div className="screenshot-display">
                             <Image
                                 src={screenshots[activeScreenshot].src}
@@ -192,7 +274,7 @@ export default function OrbitalPage() {
                         </div>
                     </div>
                 </div>
-                <Wave />
+                <Wave/>
             </main>
         </div>
     );

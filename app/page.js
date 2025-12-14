@@ -14,9 +14,6 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
     const [marqueePlay, setMarqueePlay] = useState(true);
 
-    // YouTube Video ID - Replace with your actual video ID
-    const YOUTUBE_VIDEO_ID = "YOUR_VIDEO_ID_HERE"; // e.g., "dQw4w9WgXcQ"
-
     // Steam widget configuration
     const ORBITAL_STEAM_APP_ID = 3891880;
     const ORBITAL_STEAM_WIDGET_ENABLED = true;
@@ -103,16 +100,16 @@ export default function Home() {
                 <div className="home-banner">
                     <div className="home-text-cnt fadein">
                         <div className="trailer-container">
-                            <iframe
-                                width="560"
-                                height="315"
-                                src={`https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&mute=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=1&modestbranding=1&rel=0`}
-                                title="Classy Games Showcase"
-                                frameBorder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                referrerPolicy="strict-origin-when-cross-origin"
-                                allowFullScreen>
-                            </iframe>
+                            <video
+                                className="promo-featured"
+                                autoPlay
+                                playsInline
+                                muted
+                                loop
+                            >
+                                <source src="/assets/Videos/Orbital_Teaser_Trailer.mp4" type="video/mp4"/>
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </div>
                 </div>

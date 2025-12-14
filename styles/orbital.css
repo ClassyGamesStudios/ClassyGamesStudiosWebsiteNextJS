@@ -1,11 +1,53 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+/* Download Open Sans fonts locally instead of importing from Google */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/OpenSans-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/OpenSans-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('/fonts/OpenSans-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/OpenSans-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url('/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+}
 
 /* ============================================
    HERO BANNER
 ============================================ */
 .orbital-page {
   width: 100vw;
-  height: 180vh;
+  height: 160vh;
   position: relative;
 }
 
@@ -23,7 +65,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1;
+  z-index: 0;
 }
 
 .orbital-page svg {
@@ -102,10 +144,47 @@
   box-shadow: 0 20px 60px rgba(129, 186, 223, 0.3);
 }
 
-.trailer-container iframe {
+.trailer-container iframe,
+.trailer-container video {
   width: 100%;
   height: 100%;
   border: none;
+  display: block;
+  object-fit: cover;
+}
+
+.promo-featured {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission-button-wrapper {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mission-button {
+  background-color: var(--classyBlue);
+  color: white;
+  padding: 1.2rem 2.8rem;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid var(--classyBlue);
+  letter-spacing: 1px;
+}
+
+.mission-button:hover {
+  background-color: white;
+  color: var(--classyBlue);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(129, 186, 223, 0.4);
 }
 
 /* ============================================
@@ -228,10 +307,9 @@
 }
 
 .steam-widget-section .light-content {
-  margin-top: -3vh; /* Adjust for wave */
+  margin-top: -3vh;
 }
 
-/* Steam Widget Specific Styles */
 .steam-widget-placeholder {
   background: rgba(23, 26, 33, 0.95);
   border: 2px solid rgba(26, 188, 156, 0.3);
@@ -301,7 +379,7 @@
 /* Game Overview Grid */
 .overview-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));  /* Added minmax(0, 1fr) */
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 2rem;
   width: 100%;
 }
@@ -328,14 +406,14 @@
 }
 
 .game-overview-item:hover .overview-icon {
-  transform: scale(1.5);  /* Scale icon on hover */
+  transform: scale(1.5);
 }
 
 .overview-icon {
   font-size: 48px;
   margin-bottom: 1rem;
   color: white;
-  transition: transform 0.3s ease;  /* Smooth scaling transition */
+  transition: transform 0.3s ease;
 }
 
 .game-overview-item h3 {
@@ -343,8 +421,7 @@
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
-  color: white;  /* Changed to white */
-  /* Removed background, padding, border-radius, and box-shadow */
+  color: white;
 }
 
 .game-overview-item p {
@@ -352,7 +429,7 @@
   color: rgba(255, 255, 255, 0.9);
   line-height: 1.7;
   margin: 0;
-  width: 90%;  /* Almost full width of item */
+  width: 90%;
 }
 
 /* Screenshots Gallery */
