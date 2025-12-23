@@ -344,7 +344,7 @@ export default function OrbitalMission() {
                             buys humanity time to escape.
                             <br/><br/>
                             Join this mission to compete for prizes and exclusive rewards, climb the leaderboards, and
-                            help shape the development of Orbital. Victory isn't about winning, it's about lasting.
+                            help shape the development of Orbital. Victory isn&apos;t about winning, it&apos;s about lasting.
                         </p>
                     </div>
                     <div className="cta-container-top">

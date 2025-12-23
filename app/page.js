@@ -142,7 +142,7 @@ export default function Home() {
                             </Link>
                             <p className="featured-game-description">
                                 Orbital is an infinite survival challenge where you pilot entire planets to delay
-                                humanity's extinction. Outrun a supermassive black hole, master each world's unique
+                                humanity&apos;s extinction. Outrun a supermassive black hole, master each world&apos;s unique
                                 technologies, push your limits to earn Quanta, unlock new planets, and climb the global
                                 leaderboard. One desperate second at a time.
                             </p>
@@ -241,11 +241,11 @@ export default function Home() {
                 <div className="dark-content">
                     <h2 className="dark-title">ABOUT CLASSY GAMES</h2>
                     <p className="dark-paragraph">
-                        We're a remote team of developers, artists, and designers united by
+                        We&apos;re a remote team of developers, artists, and designers united by
                         a shared love for imaginative, player-first experiences. With a
                         focus on thoughtful design, clear collaboration, and creative
-                        integrity, we're building games that stand out and a studio culture
-                        we're proud of.
+                        integrity, we&apos;re building games that stand out and a studio culture
+                        we&apos;re proud of.
                     </p>
                     <Link href="/about-us" className="cta-button primary">
                         <span>Learn More</span>
