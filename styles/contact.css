@@ -2,7 +2,7 @@
   font-family: "Open Sans", sans-serif;
   position: relative;
   width: 100vw;
-  padding: 6rem;
+  padding: 2rem 2rem 8rem 2rem;
   gap: 4rem;
   display: flex;
   justify-content: center;
@@ -20,7 +20,8 @@
 .contact-first-cnt p {
   width: 100%;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .contact-upper-cnt {
@@ -35,11 +36,13 @@
 
 .contact-heading {
   font-size: 44px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 1rem;
+  text-transform: uppercase;
 }
 
 .contact-heading::before,
@@ -72,11 +75,13 @@
 
 .communication-intro h2 {
   font-size: 44px;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   gap: 1rem;
+  text-transform: uppercase;
 }
 
 .communication-intro h2::before,
@@ -92,8 +97,9 @@
 .communication-intro p {
   width: 100%;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
+  line-height: 1.6;
 }
 
 .communication-intro em {
@@ -194,15 +200,17 @@
 
 .contact-method-card .contact-info-cnt h2 {
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--classyBlack);
+  text-transform: uppercase;
   margin: 0;
 }
 
 .contact-method-card .contact-info-cnt p {
   font-size: 14px;
+  font-weight: 400;
   color: #666;
-  line-height: 1.5;
+  line-height: 1.6;
   margin: 0;
 }
 
@@ -270,7 +278,7 @@
   }
 
   .contact-page {
-    padding: 6rem 1rem;
+    padding: 2rem 1rem 8rem 1rem;
   }
 
   .contact-heading {
@@ -298,7 +306,7 @@
   }
 
   .contact-page {
-    padding: 6rem 1rem;
+    padding: 2rem 1rem 8rem 1rem;
     flex-direction: column;
   }
 

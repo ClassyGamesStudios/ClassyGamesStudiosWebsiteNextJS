@@ -14,12 +14,18 @@ export default function OrbitalPage() {
     const STEAM_WIDGET_ENABLED = true;
 
     const screenshots = [
-        {src: "/assets/GameScreenshots/Orbital/Earth_Menu.png", alt: "Orbital Earth menu"},
-        {src: "/assets/GameScreenshots/Orbital/Earth_GameVerThree.png", alt: "Orbital Earth gameplay"},
-        {src: "/assets/GameScreenshots/Orbital/Leaderboard_VerTwo.png", alt: "Orbital leaderboard view"},
-        {src: "/assets/GameScreenshots/Orbital/Luna_GameVerFour.png", alt: "Orbital Luna gameplay"},
-        {src: "/assets/GameScreenshots/Orbital/Store_VerOne.png", alt: "Orbital in-game store"},
-        {src: "/assets/GameScreenshots/Orbital/Venus_Menu.png", alt: "Orbital Venus menu"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_1.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_2.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_3.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_4.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_5.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_6.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_7.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_8.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_9.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_10.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_11.webp", alt: "Orbital Gameplay Screenshot"},
+        {src: "/assets/GameScreenshots/Orbital/GameplayScreenshot_12.webp", alt: "Orbital Gameplay Screenshot"},
     ];
 
     useEffect(() => {
@@ -36,6 +42,14 @@ export default function OrbitalPage() {
 
         return () => ctx.revert();
     }, []);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setActiveScreenshot((prev) => (prev + 1) % screenshots.length);
+        }, 5000);
+
+        return () => clearInterval(interval);
+    }, [screenshots.length]);
 
     const Wave = ({color = "var(--classyBlack)"}) => (
         <svg
@@ -69,7 +83,6 @@ export default function OrbitalPage() {
                                 priority
                             />
                         </Link>
-                        {/*<p className="coming-soon">Coming 2026</p>*/}
                         <div className="trailer-container">
                             <video
                                 className="promo-featured"
@@ -82,14 +95,12 @@ export default function OrbitalPage() {
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <div className="cta-container-top fadein">
-                            <Link
-                                href="/games/orbital/orbital-mission"
-                                className="cta-button primary"
-                            >
-                                <span>Join the Next Orbital Mission</span>
-                            </Link>
-                        </div>
+                        <Link
+                            href="/games/orbital/orbital-mission"
+                            className="cta-button primary"
+                        >
+                            <span>Join the Next Orbital Mission</span>
+                        </Link>
                     </div>
                 </div>
                 <Wave color="white"/>
@@ -240,6 +251,7 @@ export default function OrbitalPage() {
             {/* ====================== SCREENSHOTS (LIGHT) ====================== */}
             <main className="light-section screenshots-light-section">
                 <div className="light-content fadein">
+                    <h1 className="light-title">Gameplay Screenshots</h1>
                     <div className="screenshots-gallery">
                         <div className="screenshot-display">
                             <Image

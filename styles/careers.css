@@ -75,7 +75,7 @@
 .light-section {
   position: relative;
   width: 100vw;
-  padding: 6rem 1rem;
+  padding: 2rem 1rem 8rem 1rem;
   display: flex;
   font-family: "Open Sans", sans-serif;
   align-items: center;
@@ -88,7 +88,7 @@
 .dark-section {
   position: relative;
   width: 100vw;
-  padding: 6rem 1rem;
+  padding: 2rem 1rem 8rem 1rem;
   display: flex;
   font-family: "Open Sans", sans-serif;
   align-items: center;
@@ -166,13 +166,13 @@
 
 /* ===== JOIN SECTION ===== */
 .join-section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
 }
 
 /* ===== JOBS SECTION ===== */
 .jobs-section {
-  padding-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 8rem;
 }
 
@@ -265,7 +265,7 @@
 
 /* ===== SUPPORT SECTION ===== */
 .support-section {
-  padding-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 8rem;
 }
 

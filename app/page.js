@@ -113,7 +113,7 @@ export default function Home() {
                             </video>
                         </div>
                         <div className="cta-container-top">
-                            <Link href="/games/orbital" className="cta-button primary">
+                            <Link href="/games/orbital/orbital-mission" className="cta-button primary">
                                 <span>JOIN THE NEXT ORBITAL MISSION</span>
                                 <FaPaperPlane/>
                             </Link>

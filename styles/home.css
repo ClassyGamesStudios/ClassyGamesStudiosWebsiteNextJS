@@ -151,7 +151,7 @@ body::-webkit-scrollbar {
   height: 10vh;
   position: absolute;
   bottom: -10px;
-  fill: white; /* First wave is white */
+  fill: white;
 }
 
 /* Hero Text/Content */
@@ -179,7 +179,7 @@ body::-webkit-scrollbar {
 .hero-tagline {
   font-size: 44px;
   color: white;
-  text-transform: capitalize;
+  text-transform: uppercase;
   display: flex;
   align-items: center;
   gap: 1rem;

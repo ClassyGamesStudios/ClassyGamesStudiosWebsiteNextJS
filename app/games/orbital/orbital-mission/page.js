@@ -353,7 +353,6 @@ export default function OrbitalMission() {
                             className="cta-button primary"
                         >
                             <span>Join the Mission</span>
-                            <FaGamepad/>
                         </button>
                     </div>
                 </div>

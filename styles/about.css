@@ -75,7 +75,7 @@
 .light-section {
   position: relative;
   width: 100vw;
-  padding: 6rem 1rem;
+  padding: 2rem 1rem 8rem 1rem;
   display: flex;
   font-family: "Open Sans", sans-serif;
   align-items: center;
@@ -88,7 +88,7 @@
 .dark-section {
   position: relative;
   width: 100vw;
-  padding: 6rem 1rem;
+  padding: 2rem 1rem 8rem 1rem;
   display: flex;
   font-family: "Open Sans", sans-serif;
   align-items: center;
@@ -166,8 +166,8 @@
 
 /* ===== TEAM SECTION ===== */
 .team-section {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 2rem;
+  padding-bottom: 8rem;
 }
 
 .team-photo-cnt {
@@ -296,13 +296,13 @@
 
 /* ===== STORY SECTION ===== */
 .story-section {
-  padding-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 8rem;
 }
 
 /* ===== AWARDS SECTION ===== */
 .awards-section {
-  padding-top: 8rem;
+  padding-top: 2rem;
   padding-bottom: 8rem;
 }
 
