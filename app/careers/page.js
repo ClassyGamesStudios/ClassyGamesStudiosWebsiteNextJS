@@ -1,34 +1,43 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import "@/styles/careers.css";
 import { useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import classyLogo from "../../public/assets/Logos/ClassyGamesStudios_Logo.webp";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Careers() {
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.set(
-          ".photo-paragraph, .careers-text-cnt, .photo-paragraph, .team-photo, .under-text",
-          { y: 100, opacity: 0 }
-      );
-      gsap.to(
-          ".photo-paragraph, .careers-text-cnt, .photo-paragraph, .team-photo, .under-text",
-          {
-            y: 0,
-            opacity: 1,
-            delay: 0.2,
-            duration: 0.5,
-            ease: "power1.out",
-          }
-      );
+      gsap.set(".careers-text-cnt, .section-content", {
+        y: 100,
+        opacity: 0,
+      });
+      gsap.to(".careers-text-cnt, .section-content", {
+        y: 0,
+        opacity: 1,
+        delay: 0.2,
+        duration: 0.5,
+        ease: "power1.out",
+      });
 
-      gsap.from(".our-team, .members-paragraph", {
+      gsap.from(".jobs-section .section-title, .jobs-grid", {
         scrollTrigger: {
-          trigger: ".our-team",
+          trigger: ".jobs-section",
+          start: "top 90%",
+        },
+        y: 100,
+        opacity: 0,
+        duration: 0.5,
+        delay: 0.2,
+        ease: "power1.out",
+      });
+
+      gsap.from(".support-section .section-title, .support-content, .support-logos-row", {
+        scrollTrigger: {
+          trigger: ".support-section",
           start: "top 90%",
         },
         y: 100,
@@ -47,9 +56,71 @@ export default function Careers() {
       window.removeEventListener("load", ScrollTrigger.refresh);
     };
   }, []);
-  
+
+  // Reusable Wave component
+  const Wave = () => (
+      <svg
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          viewBox="0 0 1000 35"
+      >
+        <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
+      </svg>
+  );
+
+  const jobs = [
+    {
+      title: "COMING SOON",
+      image: "/assets/Logos/ClassyGamesLogo.webp",
+      descriptionUrl: "#",
+      applicationUrl: "#",
+    },
+    {
+      title: "COMING SOON",
+      image: "/assets/Logos/ClassyGamesLogo.webp",
+      descriptionUrl: "#",
+      applicationUrl: "#",
+    },
+    {
+      title: "COMING SOON",
+      image: "/assets/Logos/ClassyGamesLogo.webp",
+      descriptionUrl: "#",
+      applicationUrl: "#",
+    },
+    {
+      title: "COMING SOON",
+      image: "/assets/Logos/ClassyGamesLogo.webp",
+      descriptionUrl: "#",
+      applicationUrl: "#",
+    },
+  ];
+
+  const universityLogos = [
+    {
+      src: "/assets/Logos/Partners/Universities/CEA.webp",
+      alt: "Center for Entertainment Arts",
+    },
+    {
+      src: "/assets/Logos/Partners/Universities/SAE.webp",
+      alt: "SAE University College",
+    },
+    {
+      src: "/assets/Logos/Partners/Universities/Southampton.webp",
+      alt: "University of Southampton",
+    },
+    {
+      src: "/assets/Logos/Partners/Universities/AlBaha.webp",
+      alt: "Al Baha University",
+    },
+    {
+      src: "/assets/Logos/Partners/Universities/GEMS.webp",
+      alt: "GEMS Education",
+    },
+  ];
+
   return (
       <div className="body">
+        {/* Hero Banner */}
         <main className="careers-page">
           <div className="careers-banner">
             <div className="careers-text-cnt">
@@ -57,113 +128,103 @@ export default function Careers() {
               <div className="lower-txt">Careers</div>
             </div>
           </div>
+          {/* Banner wave - fills white for next light section */}
           <svg
               xmlns="http://www.w3.org/2000/svg"
               preserveAspectRatio="none"
-              fill="#191919"
-              fillRule="evenodd"
               viewBox="0 0 1000 35"
           >
             <path d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z" />
           </svg>
         </main>
-        <main className="photo-page">
-          {/*<p className="photo-paragraph">*/}
-          {/*  Classy Games Studios is an independent video game development studio*/}
-          {/*  specializing in creating engaging games that ignite your imagination*/}
-          {/*  and bring out your inner child. <br /> <br />*/}
-          {/*  Based in Northern Ireland (UK) and the United Arab Emirates, we are*/}
-          {/*  proud to operate internationally, bridging the European and Middle*/}
-          {/*  Eastern markets with a unique blend of creativity and cultural*/}
-          {/*  experience.*/}
-          {/*  <br /> <br />*/}
-          {/*  From forward-thinking developers to creative artists, our team brings*/}
-          {/*  a diverse set of skills and a shared passion for crafting*/}
-          {/*  unforgettable experiences. Our games offer players a space to unwind*/}
-          {/*  and escape from reality, blending excellence and creativity to push*/}
-          {/*  the boundaries of gaming and leave a lasting impact on players*/}
-          {/*  worldwide.*/}
-          {/*</p>*/}
-          <div className="under-text">
-            <h1 className="under-title">
-              JOIN THE CREW
-            </h1>
-            <p className="under-paragraph">
-              At Classy Games Studios, we create games that ignite your imagination and bring out your inner child — and
-              we have a lot of fun doing it.
-              <br/>
-              <br/>
-              We&apos;re a agile, focused team that values initiative, clear communication, and creative joy.
-              Whether you&apos;re animating a goofy character, refining a game loop, or sharing player feedback, your voice
-              matters here.
-              We&apos;re building games with our players, not just for them, and that same spirit of collaboration runs
-              through our team.
-              <br/>
-              <br/>
-              We work remotely and flexibly across time zones, but we’re not distant.
-              Regular check-ins, shared rituals, and open communication keep us aligned and energised.
-              We invest in tools and clarity so people can do their best work without wasting time or burning out.
-              <br/>
-              <br/>
-              We manage all our open roles through Discord. Join the server, say hi, and keep an eye out for new
-              opportunities.
-            </p>
+
+        {/* Section 1 - Join the Crew - LIGHT */}
+        <section className="join-section light-section">
+          <div className="section-container">
+            <div className="section-content">
+              <h2 className="section-title">Join The Crew</h2>
+              <p className="section-paragraph">
+                At Classy Games, creative joy sits at the heart of everything we do. We approach our work with a sense of play and craftsmanship, and we want everyone on the team to feel that too.
+                <br />
+                <br />
+                We&apos;re a globally distributed team built on trust, autonomy, and collaboration. Every voice matters. Every team member is trusted to take initiative and contribute meaningfully. We foster a culture of ownership, honesty, and openness, because we believe the best work happens when people feel supported and empowered.
+                <br />
+                <br />
+                If you&apos;re looking for a place where you can grow, create, and be part of something you&apos;re genuinely proud of, we&apos;d love to hear from you. We manage all our open roles through Discord, so join the server, say hi, and keep an eye out for new opportunities.
+              </p>
+            </div>
           </div>
-          {/*<Image*/}
-          {/*    src={classyLogo}*/}
-          {/*    alt="Logo"*/}
-          {/*    width={1000}*/}
-          {/*    height={300}*/}
-          {/*    className="team-photo"*/}
-          {/*/>*/}
-          {/*<div className="under-text">*/}
-          {/*  <h1 className="under-title">*/}
-          {/*    OUR OPEN ROLES*/}
-          {/*  </h1>*/}
-          {/*  <p className="under-paragraph">*/}
-          {/*    ?????????????????????*/}
-          {/*    <br /><br />*/}
-          {/*    ?????????????????????*/}
-          {/*  </p>*/}
-          {/*</div>*/}
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              fill="#81badf"
-              fillRule="evenodd"
-              viewBox="0 0 1000 35"
-          >
-            <path
-                d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z"/>
-          </svg>
-        </main>
+          <Wave />
+        </section>
 
-        <main className="team-page">
-          <h1 className="our-team">Our Support</h1>
-          <p className="members-paragraph">
-            Our doors are always open to those looking to break into the industry.
-            <br/><br/>
-            We offer internships and entry-level positions designed to help you gain real-world experience and grow your
-            skills.
-            <br/><br/>
-            At Classy Games Studios, we believe reliability and passion matter more than years of experience.
-            If you’re motivated, eager to learn, and ready to contribute, we want to hear from you.
+        {/* Section 2 - Open Roles - DARK */}
+        <section className="jobs-section dark-section">
+          <div className="section-container">
+            <h2 className="section-title">Open Roles</h2>
+            <div className="jobs-grid">
+              {jobs.map((job, index) => (
+                  <div key={index} className="job-card">
+                    <div className="job-image-container">
+                      <img src={job.image} alt={job.title} className="job-image" />
+                    </div>
+                    <h3 className="job-title">{job.title}</h3>
+                    <div className="job-buttons">
+                      <Link
+                          href={job.descriptionUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="job-button job-button-secondary"
+                      >
+                        Job Description
+                      </Link>
+                      <Link
+                          href={job.applicationUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="job-button job-button-primary"
+                      >
+                        Apply Now
+                      </Link>
+                    </div>
+                  </div>
+              ))}
+            </div>
+          </div>
+          <Wave />
+        </section>
 
-
-            <br/><br/>
-          </p>
-
-          <svg
-              xmlns="http://www.w3.org/2000/svg"
-              preserveAspectRatio="none"
-              fill="#81badf"
-              fillRule="evenodd"
-              viewBox="0 0 1000 35"
-          >
-            <path
-                d="M1000 5S822.877 3.636 700 3.93c-18.088.043-36.002 10.945-51 11.07-21.081.175-37.54-10.382-49-10-20.98.7-33.333 17.5-50 15S516.667 0 500 0s-33.333 17.5-50 20-29.02-14.3-50-15c-11.645-.388-29.453 10.167-51 9.992-15.016-.122-30.925-11.022-49-11.064C176.964 3.644 0 5 0 5v30h1000V5z"/>
-          </svg>
-        </main>
+        {/* Section 3 - Our Support - LIGHT */}
+        <section className="support-section light-section">
+          <div className="section-container">
+            <h2 className="section-title">Our Support</h2>
+            <p className="support-content">
+              At Classy Games, we&apos;re passionate about nurturing the next generation of game developers.
+              <br />
+              <br />
+              We&apos;ve partnered with universities and colleges around the world to offer internship opportunities that give students real, hands-on experience in the industry. Each year, we receive over 100 applications from both partner institutions and beyond, a testament to the reputation we&apos;ve built for delivering meaningful, skill-building internships.
+              <br />
+              <br />
+              Our Founder &amp; CEO, Jamie McClenaghan, brings years of experience in education and knows how to mentor interns so they leave with genuinely valuable skills. He currently works alongside the United Arab Emirates, Saudi Arabian, and Canadian government education departments to help develop game development curricula at the university level.
+              <br />
+              <br />
+              We believe in giving people a chance, but we&apos;re looking for interns who are hungry, driven, and ready to put in the work. If you&apos;re serious about breaking into the industry and willing to go the extra mile, reach out and we will support you to the best of our abilities.
+            </p>
+            <div className="support-logos-row">
+              {universityLogos.map((logo, index) => (
+                  <a
+                      key={index}
+                      href={logo.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="support-logo"
+                  >
+                    <img src={logo.src} alt={logo.alt} />
+                  </a>
+              ))}
+            </div>
+          </div>
+          <Wave />
+        </section>
       </div>
   );
 }

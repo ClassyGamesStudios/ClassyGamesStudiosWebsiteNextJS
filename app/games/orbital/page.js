@@ -5,7 +5,7 @@ import {gsap} from "gsap";
 import Image from "next/image";
 import Link from "next/link";
 import "@/styles/orbital.css";
-import {FaSteam} from "react-icons/fa";
+import {FaSteam, FaPaperPlane} from "react-icons/fa";
 
 export default function OrbitalPage() {
     const [activeScreenshot, setActiveScreenshot] = useState(0);
@@ -69,7 +69,7 @@ export default function OrbitalPage() {
                                 priority
                             />
                         </Link>
-                        <p className="coming-soon">Coming 2026</p>
+                        {/*<p className="coming-soon">Coming 2026</p>*/}
                         <div className="trailer-container">
                             <video
                                 className="promo-featured"
@@ -82,12 +82,12 @@ export default function OrbitalPage() {
                                 Your browser does not support the video tag.
                             </video>
                         </div>
-                        <div className="mission-button-wrapper fadein">
+                        <div className="cta-container-top fadein">
                             <Link
                                 href="/games/orbital/orbital-mission"
-                                className="mission-button"
+                                className="cta-button primary"
                             >
-                                JOIN ORBITAL MISSIONS
+                                <span>Join the Next Orbital Mission</span>
                             </Link>
                         </div>
                     </div>
