@@ -2,5 +2,5 @@
 module.exports = {
   siteUrl: 'https://www.classygames.gg',
   generateRobotsTxt: true,
-  outDir: './out',
+  outDir: './public',
 }
