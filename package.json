@@ -1,10 +1,10 @@
 {
-  "name": "classy-games-studio",
+  "name": "classy-games",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && next-sitemap",
     "start": "next start",
     "lint": "next lint"
   },
@@ -13,6 +13,7 @@
     "gsap": "^3.13.0",
     "lucide-react": "^0.507.0",
     "next": "15.3.1",
+    "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-fast-marquee": "^1.6.5",
